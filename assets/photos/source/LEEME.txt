@@ -1,0 +1,3 @@
+# Aquí van los originales de las fotografías (JPG/PNG/HEIC de cámara o móvil).
+# El sitio publicado usa las versiones WebP de ../img/.
+

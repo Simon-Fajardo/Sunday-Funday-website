@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1050" width="1400" height="1050" role="img">
+<defs>
+<linearGradient id="g-ensalada-frutas" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#FFF0D2"/><stop offset="1" stop-color="#FFDCA0"/>
+</linearGradient>
+<radialGradient id="g-ensalada-frutas-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1400" height="1050" fill="url(#g-ensalada-frutas)"/>
+<circle cx="1120" cy="231" r="315" fill="#F2A33C" opacity="0.14"/>
+<circle cx="252" cy="651" r="210" fill="#F2A33C" opacity="0.09"/>
+<rect width="1400" height="1050" fill="url(#g-ensalada-frutas-h)"/>
+<path d="M 427.0 819.0 a 273.0 234.8 0 0 1 546.0 0 l 0 109.2 a 273.0 109.2 0 0 1 -546.0 0 Z" fill="#F2A33C" opacity="0.30"/><path d="M 503.4 622.4 a 196.6 169.0 0 0 1 393.1 0 l 0 78.6 a 196.6 78.6 0 0 1 -393.1 0 Z" fill="#F2A33C" opacity="0.24"/><path d="M 574.4 475.0 a 125.6 108.0 0 0 1 251.2 0 l 0 50.2 a 125.6 50.2 0 0 1 -251.2 0 Z" fill="#F2A33C" opacity="0.18"/><path d="M 618.1 430.0 Q 700.0 274.4 781.9 430.0 Z" fill="#F2A33C" opacity="0.12"/>
+<rect x="969.4" y="266.5" width="27.2" height="9.2" rx="4.6" fill="#5E9E6E" opacity="0.45" transform="rotate(159.8 969.4 266.5)"/><rect x="786.7" y="909.2" width="25.6" height="8.7" rx="4.4" fill="#E14361" opacity="0.45" transform="rotate(127.8 786.7 909.2)"/><rect x="567.5" y="239.8" width="28.2" height="9.6" rx="4.8" fill="#F2A33C" opacity="0.45" transform="rotate(135.1 567.5 239.8)"/><rect x="838.9" y="337.1" width="28.9" height="9.8" rx="4.9" fill="#7B3F6B" opacity="0.45" transform="rotate(21.0 838.9 337.1)"/><rect x="1124.8" y="551.4" width="25.7" height="8.8" rx="4.4" fill="#7B3F6B" opacity="0.45" transform="rotate(51.4 1124.8 551.4)"/><rect x="106.6" y="632.8" width="28.8" height="9.8" rx="4.9" fill="#2E6BE6" opacity="0.45" transform="rotate(164.9 106.6 632.8)"/><rect x="563.4" y="719.5" width="24.8" height="8.4" rx="4.2" fill="#F2A33C" opacity="0.45" transform="rotate(7.9 563.4 719.5)"/><rect x="831.8" y="567.8" width="31.4" height="10.7" rx="5.3" fill="#7B3F6B" opacity="0.45" transform="rotate(30.3 831.8 567.8)"/><rect x="732.3" y="649.6" width="29.5" height="10.0" rx="5.0" fill="#2E6BE6" opacity="0.45" transform="rotate(79.5 732.3 649.6)"/><rect x="850.3" y="896.9" width="24.7" height="8.4" rx="4.2" fill="#E14361" opacity="0.45" transform="rotate(23.6 850.3 896.9)"/><rect x="866.9" y="701.6" width="31.0" height="10.5" rx="5.3" fill="#2E6BE6" opacity="0.45" transform="rotate(10.4 866.9 701.6)"/><rect x="729.8" y="499.9" width="23.7" height="8.1" rx="4.0" fill="#2E6BE6" opacity="0.45" transform="rotate(143.9 729.8 499.9)"/><rect x="302.2" y="107.4" width="24.6" height="8.4" rx="4.2" fill="#F2A33C" opacity="0.45" transform="rotate(169.9 302.2 107.4)"/><rect x="928.8" y="807.9" width="28.1" height="9.6" rx="4.8" fill="#5E9E6E" opacity="0.45" transform="rotate(48.2 928.8 807.9)"/>
+<g opacity="0.92"><rect x="405.5" y="918.2" width="589.0" height="74.0" rx="37.0" fill="#2C1A14"/><circle cx="442.5" cy="955.2" r="9.4" fill="#FFF7EE"/><text x="462.0" y="966.6" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="31.5" font-weight="600" letter-spacing="1.89">FOTO PENDIENTE · ENSALADA</text></g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200" role="img">
+<defs>
+<linearGradient id="g-cafe" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#F2E6DC"/><stop offset="1" stop-color="#DCC3AE"/>
+</linearGradient>
+<radialGradient id="g-cafe-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="900" height="1200" fill="url(#g-cafe)"/>
+<circle cx="720" cy="264" r="270" fill="#7A4F32" opacity="0.14"/>
+<circle cx="162" cy="744" r="180" fill="#7A4F32" opacity="0.09"/>
+<rect width="900" height="1200" fill="url(#g-cafe-h)"/>
+<path d="M 216.0 936.0 a 234.0 201.2 0 0 1 468.0 0 l 0 93.6 a 234.0 93.6 0 0 1 -468.0 0 Z" fill="#7A4F32" opacity="0.30"/><path d="M 281.5 767.5 a 168.5 144.9 0 0 1 337.0 0 l 0 67.4 a 168.5 67.4 0 0 1 -337.0 0 Z" fill="#7A4F32" opacity="0.24"/><path d="M 342.4 641.2 a 107.6 92.6 0 0 1 215.3 0 l 0 43.1 a 107.6 43.1 0 0 1 -215.3 0 Z" fill="#7A4F32" opacity="0.18"/><path d="M 379.8 602.6 Q 450.0 469.2 520.2 602.6 Z" fill="#7A4F32" opacity="0.12"/>
+<rect x="81.9" y="813.2" width="18.7" height="6.4" rx="3.2" fill="#F2A33C" opacity="0.45" transform="rotate(2.9 81.9 813.2)"/><rect x="593.8" y="634.3" width="18.9" height="6.4" rx="3.2" fill="#5E9E6E" opacity="0.45" transform="rotate(179.4 593.8 634.3)"/><rect x="477.5" y="950.9" width="18.1" height="6.1" rx="3.1" fill="#7B3F6B" opacity="0.45" transform="rotate(8.7 477.5 950.9)"/><rect x="576.6" y="873.7" width="18.4" height="6.3" rx="3.1" fill="#5E9E6E" opacity="0.45" transform="rotate(3.1 576.6 873.7)"/><rect x="570.6" y="1007.5" width="26.4" height="9.0" rx="4.5" fill="#7B3F6B" opacity="0.45" transform="rotate(60.0 570.6 1007.5)"/><rect x="650.7" y="341.7" width="18.9" height="6.4" rx="3.2" fill="#E14361" opacity="0.45" transform="rotate(114.3 650.7 341.7)"/><rect x="605.1" y="819.8" width="22.0" height="7.5" rx="3.7" fill="#E14361" opacity="0.45" transform="rotate(16.6 605.1 819.8)"/><rect x="569.1" y="895.6" width="25.8" height="8.8" rx="4.4" fill="#5E9E6E" opacity="0.45" transform="rotate(83.1 569.1 895.6)"/><rect x="505.8" y="689.9" width="19.5" height="6.6" rx="3.3" fill="#2E6BE6" opacity="0.45" transform="rotate(76.9 505.8 689.9)"/><rect x="558.6" y="1081.1" width="17.9" height="6.1" rx="3.0" fill="#2E6BE6" opacity="0.45" transform="rotate(175.9 558.6 1081.1)"/><rect x="414.3" y="961.5" width="24.3" height="8.3" rx="4.1" fill="#7B3F6B" opacity="0.45" transform="rotate(80.0 414.3 961.5)"/><rect x="589.4" y="1098.6" width="22.3" height="7.6" rx="3.8" fill="#5E9E6E" opacity="0.45" transform="rotate(103.8 589.4 1098.6)"/><rect x="295.3" y="113.0" width="23.4" height="7.9" rx="4.0" fill="#E14361" opacity="0.45" transform="rotate(44.5 295.3 113.0)"/><rect x="740.5" y="1055.5" width="20.0" height="6.8" rx="3.4" fill="#5E9E6E" opacity="0.45" transform="rotate(68.2 740.5 1055.5)"/>
+<g opacity="0.92"><rect x="231.0" y="1087.0" width="437.9" height="63.5" rx="31.7" fill="#2C1A14"/><circle cx="262.8" cy="1118.8" r="8.1" fill="#FFF7EE"/><text x="279.5" y="1128.5" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="27.0" font-weight="600" letter-spacing="1.62">FOTO PENDIENTE · CAFE</text></g>
+</svg>

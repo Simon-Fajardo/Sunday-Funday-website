@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" role="img">
+<defs>
+<linearGradient id="g-brownie" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#F2E6DC"/><stop offset="1" stop-color="#DCC3AE"/>
+</linearGradient>
+<radialGradient id="g-brownie-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="900" height="900" fill="url(#g-brownie)"/>
+<circle cx="720" cy="198" r="270" fill="#7A4F32" opacity="0.14"/>
+<circle cx="162" cy="558" r="180" fill="#7A4F32" opacity="0.09"/>
+<rect width="900" height="900" fill="url(#g-brownie-h)"/>
+<path d="M 216.0 702.0 a 234.0 201.2 0 0 1 468.0 0 l 0 93.6 a 234.0 93.6 0 0 1 -468.0 0 Z" fill="#7A4F32" opacity="0.30"/><path d="M 281.5 533.5 a 168.5 144.9 0 0 1 337.0 0 l 0 67.4 a 168.5 67.4 0 0 1 -337.0 0 Z" fill="#7A4F32" opacity="0.24"/><path d="M 342.4 407.2 a 107.6 92.6 0 0 1 215.3 0 l 0 43.1 a 107.6 43.1 0 0 1 -215.3 0 Z" fill="#7A4F32" opacity="0.18"/><path d="M 379.8 368.6 Q 450.0 235.2 520.2 368.6 Z" fill="#7A4F32" opacity="0.12"/>
+<rect x="316.4" y="687.4" width="23.5" height="8.0" rx="4.0" fill="#2E6BE6" opacity="0.45" transform="rotate(95.6 316.4 687.4)"/><rect x="648.8" y="448.5" width="24.2" height="8.2" rx="4.1" fill="#E14361" opacity="0.45" transform="rotate(96.2 648.8 448.5)"/><rect x="382.9" y="431.4" width="19.2" height="6.5" rx="3.3" fill="#F2A33C" opacity="0.45" transform="rotate(39.9 382.9 431.4)"/><rect x="239.1" y="497.4" width="17.1" height="5.8" rx="2.9" fill="#F2A33C" opacity="0.45" transform="rotate(122.0 239.1 497.4)"/><rect x="414.0" y="213.7" width="16.4" height="5.6" rx="2.8" fill="#E14361" opacity="0.45" transform="rotate(151.4 414.0 213.7)"/><rect x="326.8" y="534.3" width="20.5" height="7.0" rx="3.5" fill="#5E9E6E" opacity="0.45" transform="rotate(138.7 326.8 534.3)"/><rect x="626.5" y="255.2" width="23.2" height="7.9" rx="4.0" fill="#F2A33C" opacity="0.45" transform="rotate(75.3 626.5 255.2)"/><rect x="724.8" y="84.0" width="19.2" height="6.5" rx="3.3" fill="#5E9E6E" opacity="0.45" transform="rotate(6.5 724.8 84.0)"/><rect x="473.0" y="413.1" width="26.9" height="9.1" rx="4.6" fill="#E14361" opacity="0.45" transform="rotate(38.0 473.0 413.1)"/><rect x="195.2" y="190.6" width="19.1" height="6.5" rx="3.2" fill="#7B3F6B" opacity="0.45" transform="rotate(34.0 195.2 190.6)"/><rect x="581.5" y="222.0" width="16.6" height="5.7" rx="2.8" fill="#E14361" opacity="0.45" transform="rotate(80.0 581.5 222.0)"/><rect x="675.5" y="237.1" width="17.1" height="5.8" rx="2.9" fill="#F2A33C" opacity="0.45" transform="rotate(147.4 675.5 237.1)"/><rect x="550.4" y="442.4" width="26.3" height="8.9" rx="4.5" fill="#2E6BE6" opacity="0.45" transform="rotate(24.3 550.4 442.4)"/><rect x="280.9" y="550.6" width="18.2" height="6.2" rx="3.1" fill="#E14361" opacity="0.45" transform="rotate(175.6 280.9 550.6)"/>
+<g opacity="0.92"><rect x="205.9" y="787.0" width="488.2" height="63.5" rx="31.7" fill="#2C1A14"/><circle cx="237.6" cy="818.8" r="8.1" fill="#FFF7EE"/><text x="254.4" y="828.5" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="27.0" font-weight="600" letter-spacing="1.62">FOTO PENDIENTE · BROWNIE</text></g>
+</svg>

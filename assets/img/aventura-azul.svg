@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img">
+<defs>
+<linearGradient id="g-aventura-azul" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#DCE8FF"/><stop offset="1" stop-color="#B4CCFF"/>
+</linearGradient>
+<radialGradient id="g-aventura-azul-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1200" height="1200" fill="url(#g-aventura-azul)"/>
+<circle cx="960" cy="264" r="360" fill="#2E6BE6" opacity="0.14"/>
+<circle cx="216" cy="744" r="240" fill="#2E6BE6" opacity="0.09"/>
+<rect width="1200" height="1200" fill="url(#g-aventura-azul-h)"/>
+<path d="M 288.0 936.0 a 312.0 268.3 0 0 1 624.0 0 l 0 124.8 a 312.0 124.8 0 0 1 -624.0 0 Z" fill="#2E6BE6" opacity="0.30"/><path d="M 375.4 711.4 a 224.6 193.2 0 0 1 449.3 0 l 0 89.9 a 224.6 89.9 0 0 1 -449.3 0 Z" fill="#2E6BE6" opacity="0.24"/><path d="M 456.5 542.9 a 143.5 123.4 0 0 1 287.0 0 l 0 57.4 a 143.5 57.4 0 0 1 -287.0 0 Z" fill="#2E6BE6" opacity="0.18"/><path d="M 506.4 491.4 Q 600.0 313.6 693.6 491.4 Z" fill="#2E6BE6" opacity="0.12"/>
+<rect x="1071.7" y="344.4" width="31.8" height="10.8" rx="5.4" fill="#7B3F6B" opacity="0.45" transform="rotate(169.0 1071.7 344.4)"/><rect x="377.4" y="908.5" width="26.4" height="9.0" rx="4.5" fill="#7B3F6B" opacity="0.45" transform="rotate(174.1 377.4 908.5)"/><rect x="713.5" y="323.3" width="34.8" height="11.8" rx="5.9" fill="#F2A33C" opacity="0.45" transform="rotate(29.6 713.5 323.3)"/><rect x="875.9" y="430.8" width="24.4" height="8.3" rx="4.2" fill="#F2A33C" opacity="0.45" transform="rotate(58.1 875.9 430.8)"/><rect x="325.2" y="736.7" width="24.5" height="8.3" rx="4.2" fill="#2E6BE6" opacity="0.45" transform="rotate(1.0 325.2 736.7)"/><rect x="1098.7" y="627.5" width="23.9" height="8.1" rx="4.1" fill="#2E6BE6" opacity="0.45" transform="rotate(126.2 1098.7 627.5)"/><rect x="1069.6" y="517.1" width="29.8" height="10.1" rx="5.1" fill="#2E6BE6" opacity="0.45" transform="rotate(21.9 1069.6 517.1)"/><rect x="286.0" y="596.2" width="26.4" height="9.0" rx="4.5" fill="#E14361" opacity="0.45" transform="rotate(76.9 286.0 596.2)"/><rect x="935.2" y="941.7" width="29.1" height="9.9" rx="4.9" fill="#E14361" opacity="0.45" transform="rotate(35.0 935.2 941.7)"/><rect x="502.8" y="803.5" width="34.5" height="11.7" rx="5.9" fill="#5E9E6E" opacity="0.45" transform="rotate(140.7 502.8 803.5)"/><rect x="541.8" y="713.9" width="34.6" height="11.8" rx="5.9" fill="#5E9E6E" opacity="0.45" transform="rotate(4.9 541.8 713.9)"/><rect x="512.0" y="467.0" width="34.1" height="11.6" rx="5.8" fill="#7B3F6B" opacity="0.45" transform="rotate(160.4 512.0 467.0)"/><rect x="360.2" y="844.5" width="24.6" height="8.4" rx="4.2" fill="#E14361" opacity="0.45" transform="rotate(163.2 360.2 844.5)"/><rect x="446.4" y="468.7" width="35.4" height="12.0" rx="6.0" fill="#5E9E6E" opacity="0.45" transform="rotate(34.8 446.4 468.7)"/>
+<g opacity="0.92"><rect x="207.6" y="1049.4" width="784.8" height="84.6" rx="42.3" fill="#2C1A14"/><circle cx="249.9" cy="1091.7" r="10.8" fill="#FFF7EE"/><text x="272.2" y="1104.7" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="36.0" font-weight="600" letter-spacing="2.16">FOTO PENDIENTE · AVENTURA AZUL</text></g>
+</svg>

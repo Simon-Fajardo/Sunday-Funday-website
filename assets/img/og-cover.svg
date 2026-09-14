@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
+<defs>
+<linearGradient id="g-og-cover" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#FFE4E8"/><stop offset="1" stop-color="#FFC2CD"/>
+</linearGradient>
+<radialGradient id="g-og-cover-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#g-og-cover)"/>
+<circle cx="960" cy="139" r="189" fill="#E14361" opacity="0.14"/>
+<circle cx="216" cy="391" r="126" fill="#E14361" opacity="0.09"/>
+<rect width="1200" height="630" fill="url(#g-og-cover-h)"/>
+<path d="M 436.2 491.4 a 163.8 140.9 0 0 1 327.6 0 l 0 65.5 a 163.8 65.5 0 0 1 -327.6 0 Z" fill="#E14361" opacity="0.30"/><path d="M 482.1 373.5 a 117.9 101.4 0 0 1 235.9 0 l 0 47.2 a 117.9 47.2 0 0 1 -235.9 0 Z" fill="#E14361" opacity="0.24"/><path d="M 524.7 285.0 a 75.3 64.8 0 0 1 150.7 0 l 0 30.1 a 75.3 30.1 0 0 1 -150.7 0 Z" fill="#E14361" opacity="0.18"/><path d="M 550.9 258.0 Q 600.0 164.6 649.1 258.0 Z" fill="#E14361" opacity="0.12"/>
+<rect x="651.4" y="341.8" width="13.7" height="4.7" rx="2.3" fill="#F2A33C" opacity="0.45" transform="rotate(57.3 651.4 341.8)"/><rect x="1127.2" y="509.9" width="17.0" height="5.8" rx="2.9" fill="#7B3F6B" opacity="0.45" transform="rotate(63.2 1127.2 509.9)"/><rect x="472.8" y="87.2" width="18.6" height="6.3" rx="3.2" fill="#7B3F6B" opacity="0.45" transform="rotate(142.4 472.8 87.2)"/><rect x="645.7" y="133.8" width="11.7" height="4.0" rx="2.0" fill="#5E9E6E" opacity="0.45" transform="rotate(92.8 645.7 133.8)"/><rect x="407.6" y="329.5" width="15.0" height="5.1" rx="2.5" fill="#E14361" opacity="0.45" transform="rotate(162.5 407.6 329.5)"/><rect x="919.6" y="480.0" width="18.4" height="6.3" rx="3.1" fill="#2E6BE6" opacity="0.45" transform="rotate(98.1 919.6 480.0)"/><rect x="538.0" y="338.3" width="16.6" height="5.6" rx="2.8" fill="#E14361" opacity="0.45" transform="rotate(4.2 538.0 338.3)"/><rect x="154.2" y="201.2" width="11.4" height="3.9" rx="1.9" fill="#2E6BE6" opacity="0.45" transform="rotate(78.6 154.2 201.2)"/><rect x="227.9" y="452.0" width="12.3" height="4.2" rx="2.1" fill="#5E9E6E" opacity="0.45" transform="rotate(136.9 227.9 452.0)"/><rect x="1090.2" y="290.9" width="15.0" height="5.1" rx="2.5" fill="#E14361" opacity="0.45" transform="rotate(16.5 1090.2 290.9)"/><rect x="384.2" y="296.2" width="16.8" height="5.7" rx="2.9" fill="#F2A33C" opacity="0.45" transform="rotate(62.3 384.2 296.2)"/><rect x="695.9" y="277.5" width="13.8" height="4.7" rx="2.4" fill="#7B3F6B" opacity="0.45" transform="rotate(163.4 695.9 277.5)"/><rect x="618.3" y="521.1" width="16.5" height="5.6" rx="2.8" fill="#2E6BE6" opacity="0.45" transform="rotate(115.0 618.3 521.1)"/><rect x="689.8" y="265.6" width="16.9" height="5.8" rx="2.9" fill="#5E9E6E" opacity="0.45" transform="rotate(176.1 689.8 265.6)"/>
+<g opacity="0.92"><rect x="429.1" y="550.9" width="341.7" height="44.4" rx="22.2" fill="#2C1A14"/><circle cx="451.4" cy="573.1" r="5.7" fill="#FFF7EE"/><text x="463.1" y="579.9" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="18.9" font-weight="600" letter-spacing="1.13">FOTO PENDIENTE · PORTADA</text></g>
+</svg>

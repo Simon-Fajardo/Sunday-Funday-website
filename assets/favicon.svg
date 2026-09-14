@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sunday Funday">
+  <rect width="64" height="64" rx="16" fill="#E14361"/>
+  <g fill="#FFF7EE">
+    <path d="M19 46 a13 11.18 0 0 1 26 0 l0 5.2 a13 5.2 0 0 1 -26 0 Z"/>
+    <path d="M22.64 36.64 a9.36 8.05 0 0 1 18.72 0 l0 3.74 a9.36 3.74 0 0 1 -18.72 0 Z" opacity=".94"/>
+    <path d="M26.02 29.62 a5.98 5.14 0 0 1 11.96 0 l0 2.39 a5.98 2.39 0 0 1 -11.96 0 Z" opacity=".88"/>
+    <path d="M28.1 27.6 Q32 20.2 35.9 27.6 Z" opacity=".82"/>
+  </g>
+</svg>

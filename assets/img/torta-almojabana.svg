@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" role="img">
+<defs>
+<linearGradient id="g-torta-almojabana" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#FFF0D2"/><stop offset="1" stop-color="#FFDCA0"/>
+</linearGradient>
+<radialGradient id="g-torta-almojabana-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="900" height="900" fill="url(#g-torta-almojabana)"/>
+<circle cx="720" cy="198" r="270" fill="#F2A33C" opacity="0.14"/>
+<circle cx="162" cy="558" r="180" fill="#F2A33C" opacity="0.09"/>
+<rect width="900" height="900" fill="url(#g-torta-almojabana-h)"/>
+<path d="M 216.0 702.0 a 234.0 201.2 0 0 1 468.0 0 l 0 93.6 a 234.0 93.6 0 0 1 -468.0 0 Z" fill="#F2A33C" opacity="0.30"/><path d="M 281.5 533.5 a 168.5 144.9 0 0 1 337.0 0 l 0 67.4 a 168.5 67.4 0 0 1 -337.0 0 Z" fill="#F2A33C" opacity="0.24"/><path d="M 342.4 407.2 a 107.6 92.6 0 0 1 215.3 0 l 0 43.1 a 107.6 43.1 0 0 1 -215.3 0 Z" fill="#F2A33C" opacity="0.18"/><path d="M 379.8 368.6 Q 450.0 235.2 520.2 368.6 Z" fill="#F2A33C" opacity="0.12"/>
+<rect x="543.0" y="530.2" width="25.5" height="8.7" rx="4.3" fill="#E14361" opacity="0.45" transform="rotate(28.2 543.0 530.2)"/><rect x="160.4" y="294.5" width="22.8" height="7.7" rx="3.9" fill="#5E9E6E" opacity="0.45" transform="rotate(72.8 160.4 294.5)"/><rect x="175.7" y="119.6" width="19.6" height="6.7" rx="3.3" fill="#7B3F6B" opacity="0.45" transform="rotate(45.3 175.7 119.6)"/><rect x="717.5" y="384.2" width="21.4" height="7.3" rx="3.6" fill="#E14361" opacity="0.45" transform="rotate(88.9 717.5 384.2)"/><rect x="416.3" y="246.2" width="17.5" height="6.0" rx="3.0" fill="#F2A33C" opacity="0.45" transform="rotate(177.5 416.3 246.2)"/><rect x="220.7" y="339.9" width="26.2" height="8.9" rx="4.5" fill="#E14361" opacity="0.45" transform="rotate(73.0 220.7 339.9)"/><rect x="247.1" y="82.1" width="16.8" height="5.7" rx="2.9" fill="#F2A33C" opacity="0.45" transform="rotate(166.3 247.1 82.1)"/><rect x="230.6" y="474.2" width="16.5" height="5.6" rx="2.8" fill="#2E6BE6" opacity="0.45" transform="rotate(14.9 230.6 474.2)"/><rect x="449.5" y="161.8" width="21.1" height="7.2" rx="3.6" fill="#5E9E6E" opacity="0.45" transform="rotate(151.7 449.5 161.8)"/><rect x="135.7" y="813.1" width="20.8" height="7.1" rx="3.5" fill="#E14361" opacity="0.45" transform="rotate(137.0 135.7 813.1)"/><rect x="104.6" y="205.3" width="22.9" height="7.8" rx="3.9" fill="#5E9E6E" opacity="0.45" transform="rotate(109.4 104.6 205.3)"/><rect x="726.1" y="198.0" width="19.5" height="6.6" rx="3.3" fill="#E14361" opacity="0.45" transform="rotate(174.7 726.1 198.0)"/><rect x="471.7" y="233.5" width="21.2" height="7.2" rx="3.6" fill="#E14361" opacity="0.45" transform="rotate(85.0 471.7 233.5)"/><rect x="707.4" y="89.3" width="16.3" height="5.5" rx="2.8" fill="#5E9E6E" opacity="0.45" transform="rotate(53.3 707.4 89.3)"/>
+<g opacity="0.92"><rect x="222.7" y="787.0" width="454.7" height="63.5" rx="31.7" fill="#2C1A14"/><circle cx="254.4" cy="818.8" r="8.1" fill="#FFF7EE"/><text x="271.1" y="828.5" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="27.0" font-weight="600" letter-spacing="1.62">FOTO PENDIENTE · TORTA</text></g>
+</svg>

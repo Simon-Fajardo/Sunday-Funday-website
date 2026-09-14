@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" role="img">
+<defs>
+<linearGradient id="g-fresas-chocolate" x1="0" y1="0" x2="0.85" y2="1">
+<stop offset="0" stop-color="#FFE4E8"/><stop offset="1" stop-color="#FFC2CD"/>
+</linearGradient>
+<radialGradient id="g-fresas-chocolate-h" cx="0.28" cy="0.22" r="0.7">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="900" height="900" fill="url(#g-fresas-chocolate)"/>
+<circle cx="720" cy="198" r="270" fill="#E14361" opacity="0.14"/>
+<circle cx="162" cy="558" r="180" fill="#E14361" opacity="0.09"/>
+<rect width="900" height="900" fill="url(#g-fresas-chocolate-h)"/>
+<path d="M 216.0 702.0 a 234.0 201.2 0 0 1 468.0 0 l 0 93.6 a 234.0 93.6 0 0 1 -468.0 0 Z" fill="#E14361" opacity="0.30"/><path d="M 281.5 533.5 a 168.5 144.9 0 0 1 337.0 0 l 0 67.4 a 168.5 67.4 0 0 1 -337.0 0 Z" fill="#E14361" opacity="0.24"/><path d="M 342.4 407.2 a 107.6 92.6 0 0 1 215.3 0 l 0 43.1 a 107.6 43.1 0 0 1 -215.3 0 Z" fill="#E14361" opacity="0.18"/><path d="M 379.8 368.6 Q 450.0 235.2 520.2 368.6 Z" fill="#E14361" opacity="0.12"/>
+<rect x="691.9" y="232.9" width="19.6" height="6.7" rx="3.3" fill="#7B3F6B" opacity="0.45" transform="rotate(12.6 691.9 232.9)"/><rect x="258.6" y="591.6" width="26.9" height="9.1" rx="4.6" fill="#7B3F6B" opacity="0.45" transform="rotate(64.1 258.6 591.6)"/><rect x="778.3" y="579.7" width="19.0" height="6.5" rx="3.2" fill="#F2A33C" opacity="0.45" transform="rotate(103.3 778.3 579.7)"/><rect x="274.1" y="168.1" width="25.7" height="8.7" rx="4.4" fill="#5E9E6E" opacity="0.45" transform="rotate(142.6 274.1 168.1)"/><rect x="787.4" y="163.0" width="21.1" height="7.2" rx="3.6" fill="#7B3F6B" opacity="0.45" transform="rotate(8.2 787.4 163.0)"/><rect x="430.0" y="438.6" width="26.2" height="8.9" rx="4.5" fill="#5E9E6E" opacity="0.45" transform="rotate(61.5 430.0 438.6)"/><rect x="429.4" y="650.4" width="19.9" height="6.8" rx="3.4" fill="#5E9E6E" opacity="0.45" transform="rotate(127.8 429.4 650.4)"/><rect x="144.0" y="95.8" width="20.2" height="6.9" rx="3.4" fill="#E14361" opacity="0.45" transform="rotate(177.3 144.0 95.8)"/><rect x="672.0" y="373.0" width="23.1" height="7.9" rx="3.9" fill="#2E6BE6" opacity="0.45" transform="rotate(60.6 672.0 373.0)"/><rect x="262.7" y="509.2" width="17.5" height="5.9" rx="3.0" fill="#7B3F6B" opacity="0.45" transform="rotate(177.1 262.7 509.2)"/><rect x="475.2" y="809.0" width="20.7" height="7.0" rx="3.5" fill="#7B3F6B" opacity="0.45" transform="rotate(128.7 475.2 809.0)"/><rect x="219.0" y="477.1" width="22.5" height="7.6" rx="3.8" fill="#7B3F6B" opacity="0.45" transform="rotate(91.1 219.0 477.1)"/><rect x="761.9" y="141.9" width="23.5" height="8.0" rx="4.0" fill="#7B3F6B" opacity="0.45" transform="rotate(92.0 761.9 141.9)"/><rect x="262.2" y="126.6" width="19.7" height="6.7" rx="3.4" fill="#7B3F6B" opacity="0.45" transform="rotate(116.6 262.2 126.6)"/>
+<g opacity="0.92"><rect x="214.3" y="787.0" width="471.4" height="63.5" rx="31.7" fill="#2C1A14"/><circle cx="246.0" cy="818.8" r="8.1" fill="#FFF7EE"/><text x="262.8" y="828.5" fill="#FFF7EE" font-family="Montserrat, Verdana, sans-serif" font-size="27.0" font-weight="600" letter-spacing="1.62">FOTO PENDIENTE · FRESAS</text></g>
+</svg>
