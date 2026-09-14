@@ -200,9 +200,38 @@ que se salta entre ellas sin volver al inicio.
 
 ---
 
-## 8. Comprobado
+## 8. Comportamiento por tamaño de pantalla
 
-Chromium 1440×900 y 390×844, en las cuatro páginas: sin errores de consola, sin
-peticiones fallidas, sin desbordes horizontales, un solo `<h1>` por página, sin
-enlaces ni anclas rotos, contraste WCAG AA en todo el texto. Funciona por
-`http://` y por `file://`, con y sin JavaScript, y con movimiento reducido.
+La web está pensada para servir igual de bien desde el computador y desde el
+celular, que es por donde va a llegar casi todo el mundo (Instagram, Google Maps
+o una búsqueda).
+
+| Ancho | Galería de la portada | Menú | Navegación |
+|---|---|---|---|
+| < 600 px (celular) | 1 columna | 1 columna | Hamburguesa + accesos «El menú» + barra flotante |
+| 600–959 px (tablet, celular apaisado) | 2 columnas | 1 columna | Igual |
+| ≥ 960 px (portátil y escritorio) | Mosaico editorial de 12 columnas | 2 columnas | Barra superior completa |
+
+Decisiones concretas para que sea **útil**, no solo que quepa:
+
+- **El menú se alcanza sin abrir la hamburguesa.** En celular hay un bloque
+  «El menú» justo después de la cinta con las tres categorías; en escritorio
+  ese bloque se oculta porque la barra superior ya las muestra.
+- **Todo lo que se toca mide 44 px o más**, el mínimo recomendado para el dedo:
+  botones, enlaces del pie, logo y la barra de categorías del menú.
+- **La barra flotante «Cómo llegar»** aparece al pasar el hero en celular, y el
+  pie lleva espacio extra para que no tape el cierre de la página.
+- **La barra de categorías del menú es fija**, así que se salta entre Helados,
+  Cafés y Demás productos sin volver arriba.
+- **Ningún texto baja de 11 px**, y por debajo de 13 px solo quedan rótulos en
+  mayúsculas y la letra pequeña legal.
+
+---
+
+## 9. Comprobado
+
+Once anchos entre 320 px (iPhone SE) y 1920 px, en las cuatro páginas: sin
+desbordes horizontales, sin objetivos táctiles por debajo de 44 px, sin errores
+de consola, sin peticiones fallidas, un solo `<h1>` por página, sin enlaces ni
+anclas rotos, y contraste WCAG AA en todo el texto. Funciona por `http://` y por
+`file://`, con y sin JavaScript, y con movimiento reducido.
