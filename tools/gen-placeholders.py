@@ -154,6 +154,7 @@ SPECS = [
     ("local-mesas",        1680,  720, "cacao",    "FOTO PENDIENTE · EL LOCAL"),
     ("local-vitrina",       900,  700, "mango",    "FOTO PENDIENTE · VITRINA"),
     ("familia",             900,  700, "pistacho", "FOTO PENDIENTE · EQUIPO"),
+    ("local-mostrador",     900,  720, "mango",    "FOTO PENDIENTE · MOSTRADOR"),
     ("mapa",               1200,  800, "pistacho", "MAPA PENDIENTE · EMBED"),
     ("og-cover",           1200,  630, "fresa",    "FOTO PENDIENTE · PORTADA"),
 ]

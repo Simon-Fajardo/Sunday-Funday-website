@@ -3,12 +3,11 @@
 
 /* =============================================================================
    SUNDAY FUNDAY · main.js
-   Cinco sistemas de interacción y nada más:
+   Cuatro sistemas de interacción y nada más:
      1. Navegación (cabecera fija + panel móvil)
      2. Reveal al hacer scroll
-     3. Pestañas del menú (mejora progresiva: sin JS el menú se apila)
-     4. Barra flotante "Cómo llegar" en móvil
-     5. Parallax muy suave (solo si GSAP cargó)
+     3. Barra flotante "Cómo llegar" en móvil
+     4. Parallax muy suave (solo si GSAP cargó)
    Todo el contenido vive en el HTML. Este archivo solo lo enriquece.
    ========================================================================== */
 
@@ -133,72 +132,7 @@
   }
 
   /* ---------------------------------------------------------------------------
-     3. Pestañas del menú (mejora progresiva)
-     ------------------------------------------------------------------------ */
-  function initMenuTabs() {
-    var zona = $("[data-menu]");
-    if (!zona) return;
-
-    var grupos = $$(".menu-grupo", zona);
-    var listaTabs = $("[data-menu-tabs]", zona);
-    if (grupos.length < 2 || !listaTabs) return;
-
-    var tabs = [];
-
-    grupos.forEach(function (grupo, i) {
-      var titulo = $(".menu-grupo-titulo", grupo);
-      var nombre = grupo.getAttribute("data-nombre") || (titulo ? titulo.textContent.trim() : "Carta " + (i + 1));
-      var id = grupo.id || "menu-grupo-" + i;
-      grupo.id = id;
-
-      var tab = document.createElement("button");
-      tab.type = "button";
-      tab.className = "menu-tab";
-      tab.id = id + "-tab";
-      tab.setAttribute("role", "tab");
-      tab.setAttribute("aria-controls", id);
-      tab.setAttribute("aria-selected", i === 0 ? "true" : "false");
-      tab.tabIndex = i === 0 ? 0 : -1;
-      tab.textContent = nombre;
-
-      grupo.setAttribute("role", "tabpanel");
-      grupo.setAttribute("aria-labelledby", tab.id);
-      grupo.setAttribute("tabindex", "0");
-      if (i !== 0) grupo.hidden = true;
-
-      tab.addEventListener("click", function () { seleccionar(i); });
-      tab.addEventListener("keydown", function (e) {
-        var salto = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
-        if (!salto) return;
-        e.preventDefault();
-        var siguiente = (i + salto + tabs.length) % tabs.length;
-        seleccionar(siguiente);
-        tabs[siguiente].focus();
-      });
-
-      listaTabs.appendChild(tab);
-      tabs.push(tab);
-    });
-
-    function seleccionar(indice) {
-      tabs.forEach(function (tab, i) {
-        var activo = i === indice;
-        tab.setAttribute("aria-selected", activo ? "true" : "false");
-        tab.tabIndex = activo ? 0 : -1;
-        grupos[i].hidden = !activo;
-      });
-      // Mantiene visible la pestaña activa en el carrusel horizontal del móvil.
-      if (tabs[indice].scrollIntoView) {
-        tabs[indice].scrollIntoView({ block: "nearest", inline: "nearest" });
-      }
-    }
-
-    listaTabs.setAttribute("role", "tablist");
-    listaTabs.hidden = false;
-  }
-
-  /* ---------------------------------------------------------------------------
-     4. Barra flotante en móvil
+     3. Barra flotante en móvil
      ------------------------------------------------------------------------ */
   function initBarraMovil() {
     var barra = $("[data-barra-movil]");
@@ -216,7 +150,7 @@
   }
 
   /* ---------------------------------------------------------------------------
-     5. Datos del negocio (lib/manifest.js) → enlaces y textos del HTML
+     4. Datos del negocio (lib/manifest.js) → enlaces y textos del HTML
      ------------------------------------------------------------------------ */
   function initDatosNegocio() {
     var contacto = datos.contacto || {};
@@ -275,7 +209,7 @@
   }
 
   /* ---------------------------------------------------------------------------
-     6. Parallax muy suave (requiere GSAP; ±28 px como máximo)
+     5. Parallax muy suave (requiere GSAP; ±28 px como máximo)
      ------------------------------------------------------------------------ */
   function initParallax() {
     if (reducido) return;
@@ -306,7 +240,6 @@
   function boot() {
     safe(initNav, "initNav");
     safe(initReveals, "initReveals");
-    safe(initMenuTabs, "initMenuTabs");
     safe(initBarraMovil, "initBarraMovil");
     safe(initDatosNegocio, "initDatosNegocio");
 

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Helados · Sunday Funday, heladería en Nariño Sur, Bogotá</title>
+<meta name="description" content="Conos, Funday con dos toppings, sundaes, parfait, affogato y Aventura Azul. Helado suave hecho al momento en Nariño Sur, Bogotá.">
+<meta name="theme-color" content="#FFF7EE">
+
+<!-- PENDIENTE: al publicar, añade la URL real del sitio en canonical y og:url. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunday Funday">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Helados · Sunday Funday, heladería en Nariño Sur, Bogotá">
+<meta property="og:description" content="Conos, Funday con dos toppings, sundaes, parfait, affogato y Aventura Azul. Helado suave hecho al momento en Nariño Sur, Bogotá.">
+<!-- PENDIENTE: reemplazar por una foto real de 1200×630 px en .jpg -->
+<meta property="og:image" content="assets/img/og-cover.svg">
+<meta property="og:image:alt" content="Menú de Sunday Funday">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..800,0..100,0..1;1,9..144,500..800,0..100,0..1&family=Montserrat:ital,wght@0,400..800;1,400..600&display=swap">
+
+<link rel="preload" as="image" href="assets/img/funday.svg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260914b">
+<script>document.documentElement.classList.add("js");</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Helados de Sunday Funday",
+  "inLanguage": "es-CO",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Del día a día",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Cono de helado suave",
+          "description": "Servido al momento, en barquillo. El punto de partida."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Funday con 2 toppings",
+          "description": "Helado suave y dos toppings a elección. La decisión más difícil del día."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Sundae",
+          "description": "Helado suave con salsa, crocante y cereza. El de toda la vida, bien servido."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Parfait",
+          "description": "Capas de helado suave, salsa y crocante en vaso alto."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Affogato",
+          "description": "Helado suave con un espresso caliente por encima."
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Especiales",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Aventura Azul",
+          "description": "Helado suave, perlas explosivas, gomitas de delfín y salsa azul sabor chicle."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "De temporada",
+          "description": "Cambian según la fruta y la fecha. Pregunte qué hay hoy."
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- PENDIENTE: añadir "offers" con el precio real de cada producto cuando estén
+     confirmados. No publicar precios estimados. -->
+</head>
+
+<body>
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<!-- Formas reutilizables: el goteo (borde que chorrea) y el remolino de helado -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="forma-goteo" viewBox="0 0 1200 56" preserveAspectRatio="none">
+    <path d="M0 0 H1200 V18.0 C 1189.4 18.0 1183.0 42.0 1147.0 42.0 C 1111.0 42.0 1104.6 18.0 1094.0 18.0 C 1082.0 18.0 1074.8 54.0 1034.0 54.0 C 993.2 54.0 986.0 18.0 974.0 18.0 C 965.4 18.0 960.2 34.0 931.0 34.0 C 901.8 34.0 896.6 18.0 888.0 18.0 C 877.0 18.0 870.4 46.0 833.0 46.0 C 795.6 46.0 789.0 18.0 778.0 18.0 C 768.8 18.0 763.3 40.0 732.0 40.0 C 700.7 40.0 695.2 18.0 686.0 18.0 C 673.4 18.0 665.8 52.0 623.0 52.0 C 580.2 52.0 572.6 18.0 560.0 18.0 C 552.0 18.0 547.2 30.0 520.0 30.0 C 492.8 30.0 488.0 18.0 480.0 18.0 C 469.6 18.0 463.4 48.0 428.0 48.0 C 392.6 48.0 386.4 18.0 376.0 18.0 C 367.2 18.0 361.9 38.0 332.0 38.0 C 302.1 38.0 296.8 18.0 288.0 18.0 C 276.2 18.0 269.1 56.0 229.0 56.0 C 188.9 56.0 181.8 18.0 170.0 18.0 C 162.6 18.0 158.2 33.0 133.0 33.0 C 107.8 33.0 103.4 18.0 96.0 18.0 C 86.4 18.0 80.6 48.0 48.0 48.0 C 15.4 48.0 9.6 18.0 0.0 18.0 Z"/>
+  </symbol>
+  <symbol id="forma-remolino" viewBox="0 0 64 64">
+    <path d="M19 46 a13 11.18 0 0 1 26 0 l0 5.2 a13 5.2 0 0 1 -26 0 Z"/>
+    <path d="M22.64 36.64 a9.36 8.05 0 0 1 18.72 0 l0 3.74 a9.36 3.74 0 0 1 -18.72 0 Z" opacity=".9"/>
+    <path d="M26.02 29.62 a5.98 5.14 0 0 1 11.96 0 l0 2.39 a5.98 2.39 0 0 1 -11.96 0 Z" opacity=".8"/>
+    <path d="M28.1 27.6 Q32 20.2 35.9 27.6 Z" opacity=".72"/>
+  </symbol>
+</svg>
+
+<p id="aviso-pendiente" class="solo-lectores">Enlace pendiente: el negocio todavía no ha configurado este dato.</p>
+<header class="cabecera" data-cabecera>
+  <div class="contenedor cabecera-fila">
+    <a class="logo" href="index.html" aria-label="Sunday Funday, inicio">
+      <svg class="logo-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="16" fill="#E14361"></rect>
+        <g fill="#FFF7EE"><use href="#forma-remolino"></use></g>
+      </svg>
+      <span class="logo-texto">Sunday Funday<small>Heladería &amp; café</small></span>
+    </a>
+
+    <nav class="nav-principal" aria-label="Principal">
+      <ul class="nav-lista">
+        <li><a class="nav-enlace" href="helados.html" aria-current="page">Helados</a></li>
+        <li><a class="nav-enlace" href="cafes.html">Cafés</a></li>
+        <li><a class="nav-enlace" href="otros-productos.html">Demás productos</a></li>
+        <li><a class="nav-enlace" href="index.html#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+
+    <div class="cabecera-acciones">
+      <a class="boton boton--principal boton--pequeno" href="index.html#ubicacion"
+         data-enlace="maps-direcciones" aria-describedby="aviso-pendiente">Cómo llegar</a>
+      <button class="boton-menu" type="button" data-boton-menu
+              aria-expanded="false" aria-controls="panel-menu" aria-label="Abrir el menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="panel-menu" id="panel-menu" data-panel-menu>
+  <nav aria-label="Navegación móvil">
+    <ul>
+      <li><a class="panel-enlace" href="index.html">Inicio</a></li>
+      <li><a class="panel-enlace" href="helados.html">Helados</a></li>
+      <li><a class="panel-enlace" href="cafes.html">Cafés</a></li>
+      <li><a class="panel-enlace" href="otros-productos.html">Demás productos</a></li>
+      <li><a class="panel-enlace" href="index.html#nosotros">Nosotros</a></li>
+      <li><a class="panel-enlace" href="index.html#ubicacion">Ubicación</a></li>
+    </ul>
+  </nav>
+  <div class="panel-pie">
+    <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones"
+       aria-describedby="aviso-pendiente">Cómo llegar</a>
+    <a class="boton boton--linea" href="index.html#contacto" data-enlace="whatsapp"
+       aria-describedby="aviso-pendiente">Escribir por WhatsApp</a>
+  </div>
+</div>
+
+<main id="contenido">
+
+<section class="carta-hero">
+  <div class="contenedor carta-hero-rejilla">
+    <div class="carta-hero-texto">
+      <p class="antetitulo">Sunday Funday · Nariño Sur, Bogotá</p>
+      <h1 class="titulo-1">Nuestros <em class="cursiva">helados</em></h1>
+      <p class="entrada">Todo sale de la máquina de helado suave, al momento. De aquí salen el cono más sencillo y también el Funday que a nadie le alcanza el tiempo para decidir.</p>
+    </div>
+    <div class="carta-hero-visual">
+      <figure class="figura figura--domo">
+        <img src="assets/img/funday.svg" width="900" height="1200" fetchpriority="high" loading="eager" decoding="async" alt="Espacio reservado para la fotografía del Funday con dos toppings.">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<nav class="carta-nav" aria-label="Secciones del menú">
+  <div class="contenedor">
+    <ul>
+      <li><a href="helados.html" aria-current="page">Helados</a></li>
+      <li><a href="cafes.html">Cafés</a></li>
+      <li><a href="otros-productos.html">Demás productos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="contenedor">
+
+  <section class="carta-bloque" id="del-dia" aria-labelledby="t-del-dia">
+    <div class="menu-grupo">
+      <h2 class="menu-grupo-titulo" id="t-del-dia">Del día a día</h2>
+      <ul class="menu-lista">
+          <li class="menu-item">
+            <span class="menu-item-nombre">Cono de helado suave</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Servido al momento, en barquillo. El punto de partida.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Funday con 2 toppings</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Helado suave y dos toppings a elección. La decisión más difícil del día.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Sundae</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Helado suave con salsa, crocante y cereza. El de toda la vida, bien servido.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Parfait</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Capas de helado suave, salsa y crocante en vaso alto.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Affogato</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Helado suave con un espresso caliente por encima.</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <figure class="carta-foto" data-reveal>
+    <div class="figura figura--suave">
+      <img src="assets/img/sundae.svg" width="900" height="900" loading="lazy" decoding="async"
+           alt="Espacio reservado para la fotografía del sundae de Sunday Funday.">
+    </div>
+  </figure>
+
+  <section class="carta-bloque" id="especiales" aria-labelledby="t-especiales">
+    <div class="menu-grupo">
+      <h2 class="menu-grupo-titulo" id="t-especiales">Especiales</h2>
+      <ul class="menu-lista">
+          <li class="menu-item">
+            <span class="menu-item-nombre">Aventura Azul <span class="etiqueta">Para niños</span></span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Helado suave, perlas explosivas, gomitas de delfín y salsa azul sabor chicle.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">De temporada</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Cambian según la fruta y la fecha. Pregunte qué hay hoy.</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===================== AVENTURA AZUL ===================== -->
+<section class="seccion seccion--azul" id="aventura-azul" aria-labelledby="t-azul">
+  <div class="burbujas" aria-hidden="true">
+    <span class="burbuja"></span><span class="burbuja"></span>
+    <span class="burbuja"></span><span class="burbuja"></span>
+  </div>
+
+  <div class="contenedor azul-rejilla">
+    <div class="azul-texto" data-reveal>
+      <p class="antetitulo antetitulo--azul">Especial de la casa</p>
+      <h2 class="titulo-2" id="t-azul">Aventura <em class="cursiva cursiva--crema">Azul</em></h2>
+      <p class="entrada">Helado suave, perlas que explotan en la boca, gomitas de delfín y salsa azul sabor chicle. Es el pedido que hace que la mesa entera voltee a mirar.</p>
+
+      <ul class="azul-lista">
+        <li>Helado suave</li>
+        <li>Perlas explosivas</li>
+        <li>Gomitas de delfín</li>
+        <li>Salsa azul sabor chicle</li>
+      </ul>
+
+      <p class="entrada">Está pensado para los niños. También lo piden adultos que dicen que es «para el niño».</p>
+
+      <div class="grupo-botones">
+        <a class="boton boton--crema" href="index.html#contacto" data-enlace="whatsapp"
+           aria-describedby="aviso-pendiente">Preguntar por WhatsApp</a>
+        <a class="boton boton--lineaclara" href="otros-productos.html">Ver demás productos</a>
+      </div>
+    </div>
+
+    <div class="azul-visual" data-reveal style="--retraso:.1s">
+      <figure class="figura figura--domo">
+        <img src="assets/img/aventura-azul.svg" width="1200" height="1200" loading="lazy" decoding="async"
+             alt="Espacio reservado para la fotografía de Aventura Azul, con salsa azul y perlas explosivas.">
+      </figure>
+      <figure class="figura figura--suave azul-detalle" data-parallax="12">
+        <img src="assets/img/aventura-detalle.svg" width="800" height="1000" loading="lazy" decoding="async"
+             alt="Espacio reservado para un detalle de las perlas explosivas y las gomitas de delfín.">
+      </figure>
+    </div>
+  </div>
+  <span class="goteo goteo--azul" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
+</section>
+
+<div class="contenedor">
+
+  <section class="carta-bloque" aria-labelledby="t-visita">
+    <div class="cabecera-seccion" data-reveal>
+      <p class="antetitulo">Ya escogió</p>
+      <h2 class="titulo-2" id="t-visita">Ahora falta <em class="cursiva">venir</em></h2>
+      <p class="entrada">Nos encuentra en Google Maps como <strong>Sunday Funday Cra. 7 Nariño Sur</strong>.</p>
+      <div class="grupo-botones">
+        <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones"
+           aria-describedby="aviso-pendiente"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Cómo llegar</a>
+        <a class="boton boton--linea" href="index.html">Volver al inicio</a>
+      </div>
+      <p class="nota-foto">Las imágenes son marcadores: se reemplazan por fotografía real de los productos.</p>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+
+      <div>
+        <span class="logo">
+          <svg class="logo-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="16" fill="#E14361"></rect>
+            <g fill="#FFF7EE"><use href="#forma-remolino"></use></g>
+          </svg>
+          <span class="logo-texto">Sunday Funday<small>Heladería &amp; café</small></span>
+        </span>
+        <p class="pie-lema">Helado suave, café y fruta fresca en Nariño Sur, Bogotá. Un negocio de familia desde 2021.</p>
+      </div>
+
+      <nav class="pie-columna" aria-label="Pie de página">
+        <h2>Menú</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="helados.html">Helados</a></li>
+          <li><a href="cafes.html">Cafés</a></li>
+          <li><a href="otros-productos.html">Demás productos</a></li>
+          <li><a href="index.html#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <div class="pie-columna">
+        <h2>Dónde y cómo</h2>
+        <ul>
+          <li><a href="index.html#ubicacion" data-enlace="maps" aria-describedby="aviso-pendiente">Sunday Funday Cra. 7 Nariño Sur</a></li>
+          <li><p data-dato="direccion" data-pendiente>[DIRECCIÓN COMPLETA]</p></li>
+          <li><p data-dato="horario" data-pendiente>[HORARIO]</p></li>
+          <li><a href="index.html#contacto" data-enlace="whatsapp" aria-describedby="aviso-pendiente">WhatsApp</a></li>
+          <li><a href="index.html#contacto" data-enlace="instagram" aria-describedby="aviso-pendiente">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pie-legal">
+      <p>© <span data-anio>2026</span> Sunday Funday. Bogotá, Colombia.</p>
+      <p>Precios pendientes de confirmar.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="barra-movil" data-barra-movil>
+  <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones" aria-describedby="aviso-pendiente">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    Cómo llegar
+  </a>
+  <a class="boton boton--crema boton--icono" href="index.html#contacto" data-enlace="whatsapp" aria-label="Escribir por WhatsApp" aria-describedby="aviso-pendiente">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5Z"></path></svg>
+  </a>
+</div>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260914b"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Sunday Funday · Heladería y café en Nariño Sur, Bogotá</title>
-<meta name="description" content="Helado suave, ensalada de frutas, postres y café en el barrio Nariño Sur, Bogotá. Negocio de familia desde 2021. Mira el menú y pásate a probarlo.">
+<meta name="description" content="Heladería y café de familia en el barrio Nariño Sur, Bogotá, desde 2021. Helado suave, café y fruta fresca. Mira las fotos y ven a visitarnos.">
 <meta name="theme-color" content="#FFF7EE">
 <meta name="author" content="Sunday Funday">
 
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sunday Funday">
 <meta property="og:locale" content="es_CO">
 <meta property="og:title" content="Sunday Funday · Heladería y café en Nariño Sur, Bogotá">
-<meta property="og:description" content="Helado suave, ensalada de frutas, postres y café. Negocio de familia en Bogotá desde 2021.">
+<meta property="og:description" content="Helado suave, café y fruta fresca. Negocio de familia en Bogotá desde 2021.">
 <!-- PENDIENTE: reemplazar por una foto real de 1200×630 px en .jpg -->
 <meta property="og:image" content="assets/img/og-cover.svg">
 <meta property="og:image:alt" content="Sunday Funday, heladería y café en Bogotá">
@@ -30,7 +30,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..800,0..100,0..1;1,9..144,500..800,0..100,0..1&family=Montserrat:ital,wght@0,400..800;1,400..600&display=swap">
 
 <link rel="preload" as="image" href="assets/img/hero.svg" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=20260914">
+<link rel="stylesheet" href="styles.css?v=20260914b">
 
 <script>document.documentElement.classList.add("js");</script>
 
@@ -39,16 +39,16 @@
   "@context": "https://schema.org",
   "@type": "IceCreamShop",
   "name": "Sunday Funday",
-  "description": "Heladería y café de familia en Bogotá: helado suave, ensalada de frutas, postres y café.",
+  "description": "Heladería y café de familia en Bogotá: helado suave, café y fruta fresca.",
   "foundingDate": "2021",
-  "servesCuisine": ["Helados", "Postres", "Café", "Frutas"],
+  "servesCuisine": ["Helados", "Café", "Postres", "Frutas"],
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Bogotá",
     "addressRegion": "Bogotá D.C.",
     "addressCountry": "CO"
   },
-  "hasMenu": "menu.html"
+  "hasMenu": ["helados.html", "cafes.html", "otros-productos.html"]
 }
 </script>
 <!-- PENDIENTE — completar el schema con datos reales cuando estén confirmados:
@@ -79,7 +79,7 @@
 <!-- ===================== CABECERA ===================== -->
 <header class="cabecera cabecera--sobre-hero" data-cabecera>
   <div class="contenedor cabecera-fila">
-    <a class="logo" href="#inicio" aria-label="Sunday Funday, inicio">
+    <a class="logo" href="index.html" aria-label="Sunday Funday, inicio">
       <svg class="logo-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
         <rect width="64" height="64" rx="16" fill="#E14361"></rect>
         <g fill="#FFF7EE"><use href="#forma-remolino"></use></g>
@@ -89,10 +89,9 @@
 
     <nav class="nav-principal" aria-label="Principal">
       <ul class="nav-lista">
-        <li><a class="nav-enlace" href="#favoritos">Favoritos</a></li>
-        <li><a class="nav-enlace" href="#menu">Menú</a></li>
-        <li><a class="nav-enlace" href="#aventura-azul">Aventura Azul</a></li>
-        <li><a class="nav-enlace" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav-enlace" href="helados.html">Helados</a></li>
+        <li><a class="nav-enlace" href="cafes.html">Cafés</a></li>
+        <li><a class="nav-enlace" href="otros-productos.html">Demás productos</a></li>
         <li><a class="nav-enlace" href="#ubicacion">Ubicación</a></li>
       </ul>
     </nav>
@@ -111,13 +110,12 @@
 <div class="panel-menu" id="panel-menu" data-panel-menu>
   <nav aria-label="Navegación móvil">
     <ul>
-      <li><a class="panel-enlace" href="#favoritos">Favoritos</a></li>
-      <li><a class="panel-enlace" href="#menu">Menú</a></li>
-      <li><a class="panel-enlace" href="#aventura-azul">Aventura Azul</a></li>
-      <li><a class="panel-enlace" href="#ensalada">Ensalada de frutas</a></li>
+      <li><a class="panel-enlace" href="index.html">Inicio</a></li>
+      <li><a class="panel-enlace" href="helados.html">Helados</a></li>
+      <li><a class="panel-enlace" href="cafes.html">Cafés</a></li>
+      <li><a class="panel-enlace" href="otros-productos.html">Demás productos</a></li>
       <li><a class="panel-enlace" href="#nosotros">Nosotros</a></li>
       <li><a class="panel-enlace" href="#ubicacion">Ubicación</a></li>
-      <li><a class="panel-enlace" href="menu.html">Carta completa</a></li>
     </ul>
   </nav>
   <div class="panel-pie">
@@ -139,7 +137,7 @@
       <h1 class="titulo-1">Todos los días<br><em class="cursiva">saben a domingo</em>.</h1>
       <p class="hero-entrada">Helado suave servido al momento, café bien hecho y fruta partida el mismo día. Un negocio de familia en Nariño Sur para sentarse un rato y salir de mejor genio.</p>
       <div class="grupo-botones">
-        <a class="boton boton--principal" href="#menu">Ver el menú</a>
+        <a class="boton boton--principal" href="helados.html">Ver los helados</a>
         <a class="boton boton--linea" href="#ubicacion" data-enlace="maps-direcciones"
            aria-describedby="aviso-pendiente">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -178,7 +176,7 @@
     </div>
 
   </div>
-  <p class="contenedor contenedor--ancho nota-foto">Las imágenes son marcadores: se reemplazan por fotografía real de los productos.</p>
+  <p class="contenedor contenedor--ancho nota-foto">Las imágenes son marcadores: se reemplazan por fotografía real de los productos y del local.</p>
 </section>
 
 <!-- ===================== CINTA DE SABORES ===================== -->
@@ -206,97 +204,6 @@
     </div>
   </div>
 </div>
-
-<!-- ===================== FAVORITOS ===================== -->
-<section class="seccion seccion--crema" id="favoritos" aria-labelledby="t-favoritos">
-  <div class="contenedor contenedor--ancho">
-
-    <div class="cabecera-seccion cabecera-seccion--partida" data-reveal>
-      <div>
-        <p class="antetitulo">Los que siempre piden</p>
-        <h2 class="titulo-2" id="t-favoritos">Seis razones para <em class="cursiva">parar aquí</em></h2>
-      </div>
-      <p class="entrada">No son los más caros ni los más grandes. Son los que la gente pide dos veces.</p>
-    </div>
-
-    <div class="mosaico">
-
-      <a class="favorito favorito--1" href="menu.html#funday" data-reveal>
-        <figure class="figura figura--domo">
-          <img src="assets/img/funday.svg" width="900" height="1200" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía del Funday con dos toppings.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">01</span>
-          <h3 class="favorito-nombre">Funday <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Helado suave y dos toppings. La decisión más difícil del día.</p>
-        </div>
-      </a>
-
-      <a class="favorito favorito--2" href="#ensalada" data-reveal>
-        <figure class="figura figura--suave">
-          <img src="assets/img/ensalada-frutas.svg" width="1400" height="1050" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía de la ensalada de frutas de Sunday Funday.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">02</span>
-          <h3 class="favorito-nombre">Ensalada de frutas <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Seis frutas, helado encima y barquillo. Muchos la piden de almuerzo.</p>
-        </div>
-      </a>
-
-      <a class="favorito favorito--3" href="menu.html#funday" data-reveal>
-        <figure class="figura figura--suave">
-          <img src="assets/img/sundae.svg" width="900" height="900" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía del sundae.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">03</span>
-          <h3 class="favorito-nombre">Sundae <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Salsa, crocante y cereza. El de toda la vida, bien servido.</p>
-        </div>
-      </a>
-
-      <a class="favorito favorito--4" href="#aventura-azul" data-reveal>
-        <figure class="figura figura--domo">
-          <img src="assets/img/aventura-azul.svg" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía de Aventura Azul, el helado azul con perlas explosivas.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">04</span>
-          <h3 class="favorito-nombre">Aventura Azul <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Perlas que explotan, gomitas de delfín y salsa azul. Para los niños de la mesa.</p>
-        </div>
-      </a>
-
-      <a class="favorito favorito--5" href="menu.html#cafe" data-reveal>
-        <figure class="figura figura--suave">
-          <img src="assets/img/cafe.svg" width="900" height="1200" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía del café de Sunday Funday.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">05</span>
-          <h3 class="favorito-nombre">Café Bombón <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Espresso sobre leche condensada. Dulce y corto.</p>
-        </div>
-      </a>
-
-      <a class="favorito favorito--6" href="menu.html#frias" data-reveal>
-        <figure class="figura figura--suave">
-          <img src="assets/img/malteada.svg" width="1600" height="900" loading="lazy" decoding="async"
-               alt="Espacio reservado para la fotografía de la malteada de frutos rojos.">
-        </figure>
-        <div class="favorito-pie">
-          <span class="favorito-numero" aria-hidden="true">06</span>
-          <h3 class="favorito-nombre">Malteada de frutos rojos <span class="flecha" aria-hidden="true">→</span></h3>
-          <p class="favorito-texto">Espesa, fría y de cuchara larga.</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-  <span class="goteo goteo--crema" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
-</section>
 
 <!-- ===================== NOSOTROS ===================== -->
 <section class="seccion seccion--crema2" id="nosotros" aria-labelledby="t-nosotros">
@@ -333,298 +240,126 @@
     </div>
 
   </div>
+  <span class="goteo goteo--crema2" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
 </section>
 
-<!-- ===================== MENÚ ===================== -->
-<section class="seccion seccion--crema" id="menu" aria-labelledby="t-menu" data-menu>
-  <div class="contenedor">
+<!-- ===================== GALERÍA: PRODUCTOS Y LOCAL ===================== -->
+<section class="seccion seccion--crema" id="galeria" aria-labelledby="t-galeria">
+  <div class="contenedor contenedor--ancho">
 
     <div class="cabecera-seccion cabecera-seccion--partida" data-reveal>
       <div>
-        <p class="antetitulo">La carta</p>
-        <h2 class="titulo-2" id="t-menu">Todo lo que sale <em class="cursiva">del mostrador</em></h2>
+        <p class="antetitulo">La vitrina</p>
+        <h2 class="titulo-2" id="t-galeria">Así se ve <em class="cursiva">por dentro</em></h2>
       </div>
-      <p class="entrada">Siete categorías. Si es la primera vez, empiece por el Funday.</p>
+      <p class="entrada">Los productos y el local. Lo que ve en la foto es lo que le servimos.</p>
     </div>
 
-    <!-- Sin JavaScript las categorías se muestran apiladas; con JavaScript se
-         convierten en pestañas. El contenido siempre está en el HTML. -->
-    <div class="menu-tabs" data-menu-tabs hidden></div>
+    <div class="mosaico">
 
-    <div class="menu-columnas">
+      <a class="pieza pieza--1" href="helados.html" data-reveal>
+        <figure class="figura figura--domo">
+          <img src="assets/img/funday.svg" width="900" height="1200" loading="lazy" decoding="async"
+               alt="Espacio reservado para la fotografía del Funday con dos toppings.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">01</span>
+          <h3 class="pieza-nombre">Funday <span class="flecha" aria-hidden="true">→</span></h3>
+          <p class="pieza-texto">Helado suave y dos toppings. La decisión más difícil del día.</p>
+        </div>
+      </a>
 
-      <div class="menu-grupo" id="helados" data-nombre="Helados">
-        <h3 class="menu-grupo-titulo">Helados</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Cono de helado suave</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Servido al momento, en barquillo. El punto de partida.</span>
-          </li>
-        </ul>
+      <div class="pieza pieza--2" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/local-vitrina.svg" width="900" height="700" loading="lazy" decoding="async"
+               alt="Espacio reservado para una fotografía de la vitrina del local.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">02</span>
+          <h3 class="pieza-nombre">La vitrina</h3>
+          <p class="pieza-texto">Los toppings a la vista. Escoger es parte del plan.</p>
+        </div>
       </div>
 
-      <div class="menu-grupo" id="funday" data-nombre="Funday &amp; Sundaes">
-        <h3 class="menu-grupo-titulo">Funday &amp; Sundaes</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Funday con 2 toppings</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Helado suave y dos toppings a elección.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Sundae</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Helado suave con salsa, crocante y cereza.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Parfait</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Capas de helado suave, salsa y crocante en vaso alto.</span>
-          </li>
-        </ul>
+      <a class="pieza pieza--3" href="helados.html" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/sundae.svg" width="900" height="900" loading="lazy" decoding="async"
+               alt="Espacio reservado para la fotografía del sundae.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">03</span>
+          <h3 class="pieza-nombre">Sundae <span class="flecha" aria-hidden="true">→</span></h3>
+          <p class="pieza-texto">Salsa, crocante y cereza. El de toda la vida, bien servido.</p>
+        </div>
+      </a>
+
+      <a class="pieza pieza--4" href="helados.html#aventura-azul" data-reveal>
+        <figure class="figura figura--domo">
+          <img src="assets/img/aventura-azul.svg" width="1200" height="1200" loading="lazy" decoding="async"
+               alt="Espacio reservado para la fotografía de Aventura Azul, el helado azul con perlas explosivas.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">04</span>
+          <h3 class="pieza-nombre">Aventura Azul <span class="flecha" aria-hidden="true">→</span></h3>
+          <p class="pieza-texto">Perlas que explotan y gomitas de delfín. Para los niños de la mesa.</p>
+        </div>
+      </a>
+
+      <a class="pieza pieza--5" href="cafes.html" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/cafe.svg" width="900" height="1200" loading="lazy" decoding="async"
+               alt="Espacio reservado para la fotografía del café de Sunday Funday.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">05</span>
+          <h3 class="pieza-nombre">El café <span class="flecha" aria-hidden="true">→</span></h3>
+          <p class="pieza-texto">Para la tarde bogotana, que casi siempre pide algo caliente.</p>
+        </div>
+      </a>
+
+      <a class="pieza pieza--6" href="otros-productos.html#frutas" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/ensalada-frutas.svg" width="1400" height="1050" loading="lazy" decoding="async"
+               alt="Espacio reservado para la fotografía de la ensalada de frutas de Sunday Funday.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">06</span>
+          <h3 class="pieza-nombre">Ensalada de frutas <span class="flecha" aria-hidden="true">→</span></h3>
+          <p class="pieza-texto">Seis frutas, helado encima y barquillo. Muchos la piden de almuerzo.</p>
+        </div>
+      </a>
+
+      <div class="pieza pieza--7" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/local-mostrador.svg" width="900" height="720" loading="lazy" decoding="async"
+               alt="Espacio reservado para una fotografía del equipo detrás del mostrador.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">07</span>
+          <h3 class="pieza-nombre">Quienes atienden</h3>
+          <p class="pieza-texto">Los mismos de siempre, y se acuerdan de lo que usted pide.</p>
+        </div>
       </div>
 
-      <div class="menu-grupo" id="frutas" data-nombre="Frutas">
-        <h3 class="menu-grupo-titulo">Frutas</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Ensalada de frutas</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Papaya, melón, banano, mango, piña y fresa, con crema de leche, queso, salsa de frutos rojos, grageas, dulce de mora, helado suave, cerezas y barquillo.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-grupo" id="cafe" data-nombre="Café">
-        <h3 class="menu-grupo-titulo">Café</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Cappuccino</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Espresso y leche cremada.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Mocaccino</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Espresso, chocolate y leche.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Americano</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Espresso largo, sin apuros.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Café Bombón</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Espresso sobre leche condensada.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Café Vienés</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Espresso coronado con crema.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Cappuccino con Baileys <span class="etiqueta etiqueta--linea">+18</span></span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Nuestro cappuccino con un toque de Baileys.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Té</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Infusión caliente. Pregunte por los sabores del día.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Té chai</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Especias y leche, para la tarde fría.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Aromática de frutas</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Frutas en infusión. La de siempre en Bogotá.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-grupo" id="postres" data-nombre="Postres">
-        <h3 class="menu-grupo-titulo">Postres</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Brownie con helado</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Brownie y helado suave encima.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Fresas con chocolate</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Fresas frescas bañadas en chocolate.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Affogato</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Helado suave con un espresso caliente por encima.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Oblea</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Obleas armadas al gusto.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Torta de almojábana</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Para acompañar el café de la tarde.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-grupo" id="frias" data-nombre="Bebidas frías">
-        <h3 class="menu-grupo-titulo">Bebidas frías</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Frappé de café</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Café frío, licuado y cremoso.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Malteada de frutos rojos</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Leche, helado y frutos rojos. Espesa.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">Sodas saborizadas</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Soda fría con sabor. Pregunte por los del día.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-grupo" id="especiales" data-nombre="Especiales">
-        <h3 class="menu-grupo-titulo">Especiales</h3>
-        <ul class="menu-lista">
-          <li class="menu-item">
-            <span class="menu-item-nombre">Aventura Azul <span class="etiqueta">Para niños</span></span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Helado suave, perlas explosivas, gomitas de delfín y salsa azul sabor chicle.</span>
-          </li>
-          <li class="menu-item">
-            <span class="menu-item-nombre">De temporada</span>
-            <span class="menu-precio" data-pendiente>[PRECIO]</span>
-            <span class="menu-item-texto">Cambian según la fruta y la fecha. Pregunte qué hay hoy.</span>
-          </li>
-        </ul>
+      <div class="pieza pieza--8" data-reveal>
+        <figure class="figura figura--suave">
+          <img src="assets/img/local-mesas.svg" width="1680" height="720" loading="lazy" decoding="async"
+               alt="Espacio reservado para una fotografía del salón de Sunday Funday con las mesas ocupadas.">
+        </figure>
+        <div class="pieza-pie">
+          <span class="pieza-numero" aria-hidden="true">08</span>
+          <h3 class="pieza-nombre">El salón</h3>
+          <p class="pieza-texto">Mesa grande, pedido largo y nadie con afán de irse.</p>
+        </div>
       </div>
 
     </div>
-
-    <div class="menu-pie" data-reveal>
-      <p class="menu-aviso">Los precios se confirman en el local. Si algo se acabó, se lo decimos antes de que pida.</p>
-      <a class="boton boton--linea" href="menu.html">Ver la carta completa</a>
-    </div>
-
   </div>
   <span class="goteo goteo--crema" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
 </section>
 
-<!-- ===================== AVENTURA AZUL ===================== -->
-<section class="seccion seccion--azul" id="aventura-azul" aria-labelledby="t-azul">
-  <div class="burbujas" aria-hidden="true">
-    <span class="burbuja"></span><span class="burbuja"></span>
-    <span class="burbuja"></span><span class="burbuja"></span>
-  </div>
-
-  <div class="contenedor azul-rejilla">
-    <div class="azul-texto" data-reveal>
-      <p class="antetitulo antetitulo--azul">Especial de la casa</p>
-      <h2 class="titulo-2" id="t-azul">Aventura <em class="cursiva cursiva--crema">Azul</em></h2>
-      <p class="entrada">Helado suave, perlas que explotan en la boca, gomitas de delfín y salsa azul sabor chicle. Es el pedido que hace que la mesa entera voltee a mirar.</p>
-
-      <ul class="azul-lista">
-        <li>Helado suave</li>
-        <li>Perlas explosivas</li>
-        <li>Gomitas de delfín</li>
-        <li>Salsa azul sabor chicle</li>
-      </ul>
-
-      <p class="entrada">Está pensado para los niños. También lo piden adultos que dicen que es «para el niño».</p>
-
-      <div class="grupo-botones">
-        <a class="boton boton--crema" href="#contacto" data-enlace="whatsapp"
-           aria-describedby="aviso-pendiente">Preguntar por WhatsApp</a>
-        <a class="boton boton--lineaclara" href="#menu">Ver el menú</a>
-      </div>
-    </div>
-
-    <div class="azul-visual" data-reveal style="--retraso:.1s">
-      <figure class="figura figura--domo">
-        <img src="assets/img/aventura-azul.svg" width="1200" height="1200" loading="lazy" decoding="async"
-             alt="Espacio reservado para la fotografía de Aventura Azul, con salsa azul y perlas explosivas.">
-      </figure>
-      <figure class="figura figura--suave azul-detalle" data-parallax="12">
-        <img src="assets/img/aventura-detalle.svg" width="800" height="1000" loading="lazy" decoding="async"
-             alt="Espacio reservado para un detalle de las perlas explosivas y las gomitas de delfín.">
-      </figure>
-    </div>
-  </div>
-  <span class="goteo goteo--azul" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
-</section>
-
-<!-- ===================== ENSALADA DE FRUTAS ===================== -->
-<section class="seccion seccion--pistacho" id="ensalada" aria-labelledby="t-ensalada">
-  <div class="contenedor ensalada-rejilla">
-
-    <div class="ensalada-visual" data-reveal>
-      <figure class="figura figura--suave">
-        <img src="assets/img/ensalada-frutas.svg" width="1400" height="1050" loading="lazy" decoding="async"
-             alt="Espacio reservado para la fotografía completa de la ensalada de frutas.">
-      </figure>
-      <figure class="figura figura--redonda ensalada-detalle" data-parallax="-12">
-        <img src="assets/img/ensalada-detalle.svg" width="900" height="900" loading="lazy" decoding="async"
-             alt="Espacio reservado para un detalle de la fruta partida.">
-      </figure>
-    </div>
-
-    <div class="ensalada-texto" data-reveal style="--retraso:.1s">
-      <p class="antetitulo">Ensalada de frutas</p>
-      <h2 class="titulo-2" id="t-ensalada">La que se come <em class="cursiva cursiva--pistacho">con hambre</em></h2>
-      <p class="entrada">Fruta partida el mismo día y una torre encima que no deja ver el vaso. Hay quien la pide de postre y quien la pide de almuerzo. Las dos cosas funcionan.</p>
-
-      <div class="ensalada-bloques">
-        <div class="ensalada-bloque">
-          <h3>La fruta</h3>
-          <ul class="fichas">
-            <li class="ficha">Papaya</li>
-            <li class="ficha">Melón</li>
-            <li class="ficha">Banano</li>
-            <li class="ficha">Mango</li>
-            <li class="ficha">Piña</li>
-            <li class="ficha">Fresa</li>
-          </ul>
-        </div>
-        <div class="ensalada-bloque">
-          <h3>Lo que va encima</h3>
-          <ul class="fichas">
-            <li class="ficha">Crema de leche</li>
-            <li class="ficha">Queso</li>
-            <li class="ficha">Salsa de frutos rojos</li>
-            <li class="ficha">Grageas</li>
-            <li class="ficha">Dulce de mora</li>
-            <li class="ficha">Helado suave</li>
-            <li class="ficha">Cerezas</li>
-            <li class="ficha">Barquillo</li>
-          </ul>
-        </div>
-      </div>
-
-      <p class="ensalada-remate">Sirve de postre. También sirve de almuerzo.</p>
-    </div>
-
-  </div>
-  <span class="goteo goteo--pistacho" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
-</section>
-
 <!-- ===================== EXPERIENCIA ===================== -->
-<section class="seccion seccion--crema" id="experiencia" aria-labelledby="t-experiencia">
+<section class="seccion seccion--crema3" id="experiencia" aria-labelledby="t-experiencia">
   <div class="contenedor contenedor--ancho">
 
     <div class="cabecera-seccion cabecera-seccion--partida" data-reveal>
@@ -633,13 +368,6 @@
         <h2 class="titulo-2" id="t-experiencia">Lo que pasa <em class="cursiva">en las mesas</em></h2>
       </div>
       <p class="entrada">Casi nadie viene solo por el helado. Viene por el rato que viene con él.</p>
-    </div>
-
-    <div class="experiencia-visual" data-reveal>
-      <figure class="figura figura--suave">
-        <img src="assets/img/local-mesas.svg" width="1680" height="720" loading="lazy" decoding="async"
-             alt="Espacio reservado para una fotografía del salón de Sunday Funday con las mesas ocupadas.">
-      </figure>
     </div>
 
     <div class="momentos">
@@ -666,9 +394,55 @@
     </div>
 
   </div>
+  <span class="goteo goteo--crema3" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
 </section>
 
-<!-- ===================== UBICACIÓN ===================== -->
+<!-- ===================== CONTACTO Y REDES ===================== -->
+<section class="seccion seccion--crema" id="contacto" aria-labelledby="t-contacto">
+  <div class="contenedor">
+
+    <div class="cabecera-seccion" data-reveal>
+      <p class="antetitulo">Escríbanos</p>
+      <h2 class="titulo-2" id="t-contacto">Estamos <em class="cursiva">a un mensaje</em></h2>
+    </div>
+
+    <div class="redes-rejilla" data-reveal>
+      <a class="tarjeta-red" href="#contacto" data-enlace="instagram" aria-describedby="aviso-pendiente">
+        <span class="tarjeta-red-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>
+        </span>
+        <span class="tarjeta-red-texto">
+          <strong>Instagram</strong>
+          <span data-dato="instagram" data-pendiente>[INSTAGRAM]</span>
+        </span>
+      </a>
+
+      <a class="tarjeta-red" href="#contacto" data-enlace="whatsapp" aria-describedby="aviso-pendiente">
+        <span class="tarjeta-red-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2l1-1.4 1.8.9c-.4 1.2-1.7 1.8-3 1.5-2.7-.6-5-2.9-5.6-5.6-.3-1.3.3-2.6 1.5-3l.9 1.8Z" fill="currentColor" stroke="none"></path></svg>
+        </span>
+        <span class="tarjeta-red-texto">
+          <strong>WhatsApp</strong>
+          <span data-dato="whatsapp" data-pendiente>[WHATSAPP]</span>
+        </span>
+      </a>
+
+      <a class="tarjeta-red" href="#ubicacion" data-enlace="maps" aria-describedby="aviso-pendiente">
+        <span class="tarjeta-red-icono" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </span>
+        <span class="tarjeta-red-texto">
+          <strong>Google Maps</strong>
+          <span>Sunday Funday Cra. 7 Nariño Sur</span>
+        </span>
+      </a>
+    </div>
+
+  </div>
+  <span class="goteo goteo--crema" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
+</section>
+
+<!-- ===================== UBICACIÓN (última sección) ===================== -->
 <section class="seccion seccion--crema2" id="ubicacion" aria-labelledby="t-ubicacion">
   <div class="contenedor">
 
@@ -725,51 +499,7 @@
 
     </div>
   </div>
-</section>
-
-<!-- ===================== CONTACTO Y REDES ===================== -->
-<section class="seccion seccion--crema" id="contacto" aria-labelledby="t-contacto">
-  <div class="contenedor">
-
-    <div class="cabecera-seccion" data-reveal>
-      <p class="antetitulo">Escríbanos</p>
-      <h2 class="titulo-2" id="t-contacto">Estamos <em class="cursiva">a un mensaje</em></h2>
-    </div>
-
-    <div class="redes-rejilla" data-reveal>
-      <a class="tarjeta-red" href="#contacto" data-enlace="instagram" aria-describedby="aviso-pendiente">
-        <span class="tarjeta-red-icono" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"></circle></svg>
-        </span>
-        <span class="tarjeta-red-texto">
-          <strong>Instagram</strong>
-          <span data-dato="instagram" data-pendiente>[INSTAGRAM]</span>
-        </span>
-      </a>
-
-      <a class="tarjeta-red" href="#contacto" data-enlace="whatsapp" aria-describedby="aviso-pendiente">
-        <span class="tarjeta-red-icono" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8.6 9.2c.3 2.6 2.6 4.9 5.2 5.2l1-1.4 1.8.9c-.4 1.2-1.7 1.8-3 1.5-2.7-.6-5-2.9-5.6-5.6-.3-1.3.3-2.6 1.5-3l.9 1.8Z" fill="currentColor" stroke="none"></path></svg>
-        </span>
-        <span class="tarjeta-red-texto">
-          <strong>WhatsApp</strong>
-          <span data-dato="whatsapp" data-pendiente>[WHATSAPP]</span>
-        </span>
-      </a>
-
-      <a class="tarjeta-red" href="#ubicacion" data-enlace="maps" aria-describedby="aviso-pendiente">
-        <span class="tarjeta-red-icono" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        </span>
-        <span class="tarjeta-red-texto">
-          <strong>Google Maps</strong>
-          <span>Sunday Funday Cra. 7 Nariño Sur</span>
-        </span>
-      </a>
-    </div>
-
-  </div>
-  <span class="goteo goteo--crema" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
+  <span class="goteo goteo--crema2" aria-hidden="true"><svg><use href="#forma-goteo"></use></svg></span>
 </section>
 
 </main>
@@ -791,12 +521,11 @@
       </div>
 
       <nav class="pie-columna" aria-label="Pie de página">
-        <h2>Navegación</h2>
+        <h2>Menú</h2>
         <ul>
-          <li><a href="#favoritos">Favoritos</a></li>
-          <li><a href="#menu">Menú</a></li>
-          <li><a href="menu.html">Carta completa</a></li>
-          <li><a href="#aventura-azul">Aventura Azul</a></li>
+          <li><a href="helados.html">Helados</a></li>
+          <li><a href="cafes.html">Cafés</a></li>
+          <li><a href="otros-productos.html">Demás productos</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
         </ul>
@@ -836,6 +565,6 @@
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
 <script defer src="lib/manifest.js"></script>
-<script defer src="main.js?v=20260914"></script>
+<script defer src="main.js?v=20260914b"></script>
 </body>
 </html>

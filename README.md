@@ -43,10 +43,11 @@ así nadie publica la web con datos inventados.
 
 ### Lo que queda pendiente fuera de `manifest.js`
 
-- **Precios.** Aparecen como `[PRECIO]` en `index.html` (sección menú) y en `menu.html`.
-  Sustituye cada uno por su importe; el diseño de la ficha ya está listo para recibirlo.
+- **Precios.** Aparecen como `[PRECIO]` en `helados.html`, `cafes.html` y
+  `otros-productos.html`. Sustituye cada uno por su importe; el diseño de la ficha
+  ya está listo para recibirlo. La portada no lleva precios a propósito.
 - **URL del sitio.** Cuando haya dominio, descomenta las etiquetas `canonical` y `og:url`
-  al inicio de `index.html` y `menu.html`.
+  al inicio de las cuatro páginas.
 - **Schema de negocio local.** En `index.html` hay un comentario `PENDIENTE` con la lista
   exacta de campos que faltan (dirección exacta, teléfono, coordenadas, horarios, Instagram).
   No se han rellenado con aproximaciones a propósito: Google penaliza los datos inexactos.
@@ -65,8 +66,8 @@ Para sustituirlos:
 1. Guarda los originales en `assets/photos/source/`.
 2. Conviértelos a WebP (calidad 80–85 va bien) y déjalos en `assets/img/` con el
    **mismo nombre base**: `funday.webp`, `ensalada-frutas.webp`, `hero.webp`…
-3. Cambia la extensión `.svg` por `.webp` en `index.html` y `menu.html`
-   (`grep -n "assets/img" index.html menu.html` los lista todos).
+3. Cambia la extensión `.svg` por `.webp` en las cuatro páginas
+   (`grep -n "assets/img" *.html` los lista todos).
 4. Actualiza el `alt` de cada imagen: ahora dice «Espacio reservado para…»;
    debe describir lo que realmente se ve.
 
@@ -76,15 +77,18 @@ Proporciones a las que están diseñados los huecos:
 |---|---|---|
 | `hero` | 4:5 vertical | Foto principal de portada |
 | `hero-detalle` | 3:4 vertical | Foto pequeña superpuesta en la portada |
-| `funday` | 3:4 vertical | Favorito 01 y carta |
-| `ensalada-frutas` | 4:3 | Favorito 02, sección ensalada y carta |
-| `sundae` | 1:1 | Favorito 03 |
-| `aventura-azul` | 1:1 | Favorito 04, sección Aventura Azul y carta |
-| `cafe` | 3:4 vertical | Favorito 05 y carta |
-| `malteada` | 16:9 | Favorito 06 y carta |
-| `local-mesas` | 16:9 | Sección Experiencia |
+| `funday` | 3:4 vertical | Galería 01 y portada de Helados |
+| `local-vitrina` | 4:3 | Galería 02 · **local** |
+| `sundae` | 1:1 | Galería 03 y página de Helados |
+| `aventura-azul` | 1:1 | Galería 04 y sección Aventura Azul |
+| `cafe` | 3:4 vertical | Galería 05 y portada de Cafés |
+| `ensalada-frutas` | 4:3 | Galería 06, portada de Demás productos y sección ensalada |
+| `local-mostrador` | 5:4 | Galería 07 · **local** |
+| `local-mesas` | 21:9 | Galería 08 · **local** |
 | `familia` | 5:4 | Sección Nosotros |
-| `cono-suave`, `brownie`, `aventura-detalle`, `ensalada-detalle` | varias | Carta y detalles |
+| `affogato` | 4:5 | Página de Cafés |
+| `mapa` | 3:2 | Sección Ubicación (se reemplaza por el mapa incrustado) |
+| `aventura-detalle`, `ensalada-detalle` | varias | Detalles superpuestos |
 
 Los marcadores se pueden regenerar en cualquier momento con
 `python3 tools/gen-placeholders.py` (la carpeta `tools/` no forma parte del sitio:
@@ -121,13 +125,15 @@ de las dos dentro del mismo titular es la firma tipográfica del sitio.
 - **El remolino** — la marca es la espiral del helado suave. Se repite en el logo,
   el favicon, el sello y la cinta de sabores.
 
-**Animación** — cinco sistemas y ni uno más:
+**Animación** — cuatro sistemas y ni uno más:
 
 1. Aparición de bloques al hacer scroll.
 2. Parallax de ±28 px como mucho en las fotos secundarias.
 3. Microinteracciones en botones, tarjetas y navegación.
 4. Cinta de sabores en movimiento continuo.
-5. Pestañas del menú, panel móvil y barra flotante.
+
+(El panel de navegación móvil y la barra flotante «Cómo llegar» son navegación,
+no decoración.)
 
 ---
 
@@ -135,8 +141,10 @@ de las dos dentro del mismo titular es la firma tipográfica del sitio.
 
 ```
 sunday-funday-website/
-├── index.html              Portada
-├── menu.html               Carta completa
+├── index.html              Portada: la heladería, las fotos y el mapa
+├── helados.html            Menú · Helados
+├── cafes.html              Menú · Cafés
+├── otros-productos.html    Menú · Demás productos
 ├── styles.css              Hoja de estilos única, por secciones
 ├── main.js                 Interacción (IIFE, sin módulos)
 ├── lib/
@@ -158,9 +166,9 @@ sunday-funday-website/
 
 - **Sin React, sin build, sin npm.** Es una web de dos páginas: cualquier compilación
   sería peso muerto y una barrera para mantenerla.
-- **El contenido vive en el HTML.** Sin JavaScript se ven las dos páginas enteras,
-  los 24 productos del menú y todos los datos de contacto. JavaScript solo añade
-  las pestañas, las animaciones y la barra flotante.
+- **El contenido vive en el HTML.** Sin JavaScript se ven las cuatro páginas
+  enteras, los 24 productos del menú y todos los datos de contacto.
+  JavaScript solo añade las animaciones, el panel móvil y la barra flotante.
 - **Scroll nativo, sin Lenis.** El sitio pide carga rápida por encima de inercia
   estilo Mac, y el scroll suave nativo (`scroll-behavior`) se comporta igual en todos
   los sistemas. Por eso `lib/` no incluye `lenis.min.js`.
@@ -173,8 +181,28 @@ sunday-funday-website/
 
 ---
 
-## 7. Comprobado
+## 7. Arquitectura
 
-Chromium 1440×900 y 390×844: sin errores de consola, sin peticiones fallidas,
-sin desbordes horizontales, funcionando por `http://` y por `file://`,
-con y sin JavaScript, y con movimiento reducido activado.
+La portada **no lleva menú ni precios**: solo la heladería, las fotos de los
+productos y del local, y el mapa al final. El menú vive en tres páginas
+—Helados, Cafés y Demás productos— enlazadas desde la navegación superior,
+desde el pie y desde cada foto de la galería.
+
+```
+index.html                Hero → cinta → nosotros → galería → el rato → contacto → MAPA
+├── helados.html          Del día a día · Especiales · sección Aventura Azul
+├── cafes.html            Café · Té e infusiones · llamada a los postres
+└── otros-productos.html  Frutas · Postres · Bebidas frías · sección Ensalada
+```
+
+Las tres páginas de menú comparten una barra fija con las tres categorías, así
+que se salta entre ellas sin volver al inicio.
+
+---
+
+## 8. Comprobado
+
+Chromium 1440×900 y 390×844, en las cuatro páginas: sin errores de consola, sin
+peticiones fallidas, sin desbordes horizontales, un solo `<h1>` por página, sin
+enlaces ni anclas rotos, contraste WCAG AA en todo el texto. Funciona por
+`http://` y por `file://`, con y sin JavaScript, y con movimiento reducido.

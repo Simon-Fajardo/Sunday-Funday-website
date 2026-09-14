@@ -471,32 +471,32 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
 /* --- 6.3 Favoritos: mosaico editorial ------------------------------------- */
 .mosaico { display: grid; gap: clamp(1.5rem, 3.5vw, 2.75rem); }
 
-.favorito { position: relative; display: block; }
-.favorito .figura { overflow: hidden; }
-.favorito img { transition: transform .8s var(--ease-out); }
-.favorito:hover img, .favorito:focus-visible img { transform: scale(1.055); }
+.pieza { position: relative; display: block; }
+.pieza .figura { overflow: hidden; }
+.pieza img { transition: transform .8s var(--ease-out); }
+.pieza:hover img, .pieza:focus-visible img { transform: scale(1.055); }
 
-.favorito-numero {
+.pieza-numero {
   display: inline-flex; align-items: center; gap: .5rem;
   font-size: .74rem; font-weight: 800; letter-spacing: .14em;
   color: var(--fresa-ink);
 }
-.favorito-numero::after {
+.pieza-numero::after {
   content: ""; width: 1.15rem; height: 2px; border-radius: 2px;
   background: currentColor;
 }
-.favorito-pie { padding-top: 1rem; display: grid; gap: .3rem; }
-.favorito-nombre {
+.pieza-pie { padding-top: 1rem; display: grid; gap: .3rem; }
+.pieza-nombre {
   display: flex; align-items: baseline; gap: .55rem; flex-wrap: wrap;
   font-size: clamp(1.22rem, 1.06rem + .7vw, 1.6rem);
   font-weight: 800; letter-spacing: -0.025em;
 }
-.favorito-nombre .flecha {
+.pieza-nombre .flecha {
   display: inline-block; transition: transform .4s var(--ease-out);
   color: var(--fresa-ink); font-size: .9em;
 }
-.favorito:hover .favorito-nombre .flecha { transform: translateX(5px); }
-.favorito-texto { color: var(--tinta-2); font-size: .95rem; max-width: 34ch; }
+.pieza:hover .pieza-nombre .flecha { transform: translateX(5px); }
+.pieza-texto { color: var(--tinta-2); font-size: .95rem; max-width: 34ch; }
 
 /* --- 6.4 Marca ------------------------------------------------------------ */
 .marca-rejilla { display: grid; gap: clamp(2rem, 5vw, 3.5rem); align-items: center; }
@@ -519,29 +519,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
 .pilar h3 { font-size: 1rem; font-weight: 800; letter-spacing: -0.015em; }
 .pilar p { font-size: .92rem; color: var(--tinta-2); }
 
-/* --- 6.5 Menú ------------------------------------------------------------- */
-.menu-tabs {
-  display: flex; gap: .5rem; overflow-x: auto; overflow-y: visible;
-  padding-block: .3rem 1.5rem;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-.menu-tabs::-webkit-scrollbar { display: none; }
-.menu-tabs[hidden] { display: none; }
-.menu-tab {
-  flex: none;
-  padding: .6rem 1.15rem; border-radius: 999px;
-  border: 1.5px solid rgba(44, 26, 20, .22);
-  font-size: .88rem; font-weight: 700; letter-spacing: .01em;
-  color: var(--tinta-2); background: var(--papel);
-  transition: background-color .3s var(--ease-out), color .3s var(--ease-out),
-              border-color .3s var(--ease-out), transform .3s var(--ease-out);
-}
-.menu-tab:hover { transform: translateY(-2px); border-color: var(--tinta); color: var(--tinta); }
-.menu-tab[aria-selected="true"] {
-  background: var(--tinta); color: var(--crema); border-color: var(--tinta);
-}
-
+/* --- 6.5 Listas de producto (páginas de carta) ------------------------- */
 .menu-grupo { margin-bottom: clamp(2.25rem, 5vw, 3rem); }
 .menu-grupo:last-child { margin-bottom: 0; }
 .menu-grupo-titulo {
@@ -555,9 +533,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
   background: repeating-linear-gradient(90deg, rgba(44,26,20,.22) 0 6px, transparent 6px 12px);
 }
 .menu-lista { display: grid; gap: .1rem; align-content: start; }
-/* Con las pestañas activas, una altura mínima evita que la página salte
-   al cambiar entre una categoría de 1 producto y otra de 9. */
-.js .menu-columnas { min-height: 20rem; }
+
 .menu-item {
   display: grid; grid-template-columns: 1fr auto; align-items: baseline;
   gap: .4rem 1rem;
@@ -584,9 +560,6 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
   gap: 1rem; align-items: center; justify-content: space-between;
 }
 .menu-aviso { font-size: .85rem; color: var(--tinta-3); max-width: 44ch; }
-
-/* Sin JS los grupos se apilan; con JS se comportan como pestañas */
-.menu-grupo[hidden] { display: none; }
 
 /* --- 6.6 Aventura Azul ---------------------------------------------------- */
 .burbujas { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
@@ -732,7 +705,9 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
     radial-gradient(100% 80% at 92% 0%, var(--mango-suave) 0%, rgba(255,240,210,0) 58%),
     var(--crema);
 }
+.carta-hero-rejilla { display: grid; gap: clamp(1.75rem, 4vw, 3rem); align-items: center; }
 .carta-hero-texto { display: grid; gap: 1rem; max-width: 46ch; }
+.carta-hero-visual .figura--domo { aspect-ratio: 4 / 5; max-width: 22rem; margin-inline: auto; }
 
 .carta-nav {
   position: sticky; top: 4.2rem; z-index: 40;
@@ -758,6 +733,9 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
   transition: background-color .3s var(--ease-out), color .3s var(--ease-out), border-color .3s var(--ease-out);
 }
 .carta-nav a:hover { background: var(--tinta); color: var(--crema); border-color: var(--tinta); }
+.carta-nav a[aria-current="page"] {
+  background: var(--tinta); color: var(--crema); border-color: var(--tinta);
+}
 
 .carta-bloque {
   padding-block: clamp(2.75rem, 6vw, 4.5rem);
@@ -765,6 +743,8 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
   scroll-margin-top: 8.5rem;
 }
 .carta-bloque:last-of-type { border-bottom: 0; }
+.carta-foto { margin-block: clamp(1.5rem, 4vw, 2.5rem); }
+.carta-foto .figura--suave { aspect-ratio: 3 / 2; max-width: 46rem; margin-inline: auto; }
 .carta-rejilla { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
 .carta-aparte { display: grid; gap: 1rem; }
 .carta-aparte .figura { aspect-ratio: 4 / 5; }
@@ -778,7 +758,11 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.04; letter-spacing: -0.022em
   background: var(--azul); color: var(--crema);
   display: grid; gap: 1.1rem; justify-items: start;
 }
+.carta-destacado--pistacho { background: var(--pistacho-suave); color: var(--tinta); }
+.carta-destacado--cacao { background: var(--crema-3); color: var(--tinta); }
 .carta-destacado .entrada { color: var(--crema); }
+.carta-destacado--pistacho .entrada,
+.carta-destacado--cacao .entrada { color: var(--tinta-2); }
 
 @media (min-width: 960px) {
   .carta-rejilla { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: clamp(2.5rem, 5vw, 4rem); }
@@ -840,9 +824,8 @@ html:not(.js) [data-reveal] { opacity: 1; transform: none; transition: none; }
 }
 
 @media (min-width: 960px) {
+  .carta-hero-rejilla { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
   .menu-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(2.5rem, 5vw, 4.5rem); }
-  .carta-rejilla .menu-lista { grid-template-columns: 1fr; }
-  .js .menu-columnas { min-height: 16rem; }
 
   .nav-principal { display: block; }
   .boton-menu { display: none; }
@@ -867,27 +850,31 @@ html:not(.js) [data-reveal] { opacity: 1; transform: none; transition: none; }
 
   /* Mosaico editorial de favoritos: composición asimétrica */
   .mosaico { grid-template-columns: repeat(12, 1fr); align-items: start; }
-  .favorito--1 { grid-column: 1 / 6;   grid-row: 1; }
-  .favorito--2 { grid-column: 7 / 13;  grid-row: 1; margin-top: 4.5rem; }
-  .favorito--3 { grid-column: 2 / 6;   grid-row: 2; }
-  .favorito--4 { grid-column: 6 / 10;  grid-row: 2; margin-top: 3.5rem; }
-  .favorito--5 { grid-column: 10 / 13; grid-row: 2; margin-top: .5rem; }
-  .favorito--6 { grid-column: 3 / 10;  grid-row: 3; margin-top: 1.5rem; }
+  .pieza--1 { grid-column: 1 / 6;   grid-row: 1; }
+  .pieza--2 { grid-column: 7 / 13;  grid-row: 1; margin-top: 4.5rem; }
+  .pieza--3 { grid-column: 2 / 6;   grid-row: 2; }
+  .pieza--4 { grid-column: 6 / 10;  grid-row: 2; margin-top: 3.5rem; }
+  .pieza--5 { grid-column: 10 / 13; grid-row: 2; margin-top: .5rem; }
+  .pieza--6 { grid-column: 1 / 8;   grid-row: 3; margin-top: 1.5rem; }
+  .pieza--7 { grid-column: 8 / 13;  grid-row: 3; margin-top: 5rem; }
+  .pieza--8 { grid-column: 3 / 11;  grid-row: 4; margin-top: 1rem; }
 
-  .favorito--1 .figura { aspect-ratio: 3 / 4; }
-  .favorito--2 .figura { aspect-ratio: 4 / 3; }
-  .favorito--3 .figura { aspect-ratio: 1; }
-  .favorito--4 .figura { aspect-ratio: 4 / 5; }
-  .favorito--5 .figura { aspect-ratio: 3 / 4; }
-  .favorito--6 .figura { aspect-ratio: 16 / 9; }
+  .pieza--1 .figura { aspect-ratio: 3 / 4; }
+  .pieza--2 .figura { aspect-ratio: 4 / 3; }
+  .pieza--3 .figura { aspect-ratio: 1; }
+  .pieza--4 .figura { aspect-ratio: 4 / 5; }
+  .pieza--5 .figura { aspect-ratio: 3 / 4; }
+  .pieza--6 .figura { aspect-ratio: 4 / 3; }
+  .pieza--7 .figura { aspect-ratio: 5 / 4; }
+  .pieza--8 .figura { aspect-ratio: 21 / 9; }
 }
 
 @media (max-width: 959px) {
   /* Hueco para que la barra flotante no tape el cierre del pie */
   .pie { padding-bottom: 6rem; }
   .ensalada-detalle { left: 2%; }
-  .favorito .figura { aspect-ratio: 4 / 3; }
-  .favorito--1 .figura, .favorito--4 .figura { aspect-ratio: 3 / 4; }
+  .pieza .figura { aspect-ratio: 4 / 3; }
+  .pieza--1 .figura, .pieza--4 .figura { aspect-ratio: 3 / 4; }
 }
 
 @media (min-width: 1280px) {

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Cafés · Sunday Funday, heladería y café en Nariño Sur, Bogotá</title>
+<meta name="description" content="Cappuccino, mocaccino, americano, café bombón, café vienés, frappé, té chai y aromática de frutas. En Nariño Sur, Bogotá.">
+<meta name="theme-color" content="#FFF7EE">
+
+<!-- PENDIENTE: al publicar, añade la URL real del sitio en canonical y og:url. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sunday Funday">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Cafés · Sunday Funday, heladería y café en Nariño Sur, Bogotá">
+<meta property="og:description" content="Cappuccino, mocaccino, americano, café bombón, café vienés, frappé, té chai y aromática de frutas. En Nariño Sur, Bogotá.">
+<!-- PENDIENTE: reemplazar por una foto real de 1200×630 px en .jpg -->
+<meta property="og:image" content="assets/img/og-cover.svg">
+<meta property="og:image:alt" content="Menú de Sunday Funday">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..800,0..100,0..1;1,9..144,500..800,0..100,0..1&family=Montserrat:ital,wght@0,400..800;1,400..600&display=swap">
+
+<link rel="preload" as="image" href="assets/img/cafe.svg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260914b">
+<script>document.documentElement.classList.add("js");</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Cafés de Sunday Funday",
+  "inLanguage": "es-CO",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Café",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Cappuccino",
+          "description": "Espresso y leche cremada."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Mocaccino",
+          "description": "Espresso, chocolate y leche."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Americano",
+          "description": "Espresso largo, sin apuros."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Café Bombón",
+          "description": "Espresso sobre leche condensada. Dulce y corto."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Café Vienés",
+          "description": "Espresso coronado con crema."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Cappuccino con Baileys",
+          "description": "Nuestro cappuccino con un toque de Baileys."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Frappé de café",
+          "description": "Café frío, licuado y cremoso. Para cuando sale el sol."
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Té e infusiones",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Té",
+          "description": "Infusión caliente. Pregunte por los sabores del día."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Té chai",
+          "description": "Especias y leche, para la tarde fría."
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Aromática de frutas",
+          "description": "Frutas en infusión. La de siempre en Bogotá."
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- PENDIENTE: añadir "offers" con el precio real de cada producto cuando estén
+     confirmados. No publicar precios estimados. -->
+</head>
+
+<body>
+<a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+<!-- Formas reutilizables: el goteo (borde que chorrea) y el remolino de helado -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="forma-goteo" viewBox="0 0 1200 56" preserveAspectRatio="none">
+    <path d="M0 0 H1200 V18.0 C 1189.4 18.0 1183.0 42.0 1147.0 42.0 C 1111.0 42.0 1104.6 18.0 1094.0 18.0 C 1082.0 18.0 1074.8 54.0 1034.0 54.0 C 993.2 54.0 986.0 18.0 974.0 18.0 C 965.4 18.0 960.2 34.0 931.0 34.0 C 901.8 34.0 896.6 18.0 888.0 18.0 C 877.0 18.0 870.4 46.0 833.0 46.0 C 795.6 46.0 789.0 18.0 778.0 18.0 C 768.8 18.0 763.3 40.0 732.0 40.0 C 700.7 40.0 695.2 18.0 686.0 18.0 C 673.4 18.0 665.8 52.0 623.0 52.0 C 580.2 52.0 572.6 18.0 560.0 18.0 C 552.0 18.0 547.2 30.0 520.0 30.0 C 492.8 30.0 488.0 18.0 480.0 18.0 C 469.6 18.0 463.4 48.0 428.0 48.0 C 392.6 48.0 386.4 18.0 376.0 18.0 C 367.2 18.0 361.9 38.0 332.0 38.0 C 302.1 38.0 296.8 18.0 288.0 18.0 C 276.2 18.0 269.1 56.0 229.0 56.0 C 188.9 56.0 181.8 18.0 170.0 18.0 C 162.6 18.0 158.2 33.0 133.0 33.0 C 107.8 33.0 103.4 18.0 96.0 18.0 C 86.4 18.0 80.6 48.0 48.0 48.0 C 15.4 48.0 9.6 18.0 0.0 18.0 Z"/>
+  </symbol>
+  <symbol id="forma-remolino" viewBox="0 0 64 64">
+    <path d="M19 46 a13 11.18 0 0 1 26 0 l0 5.2 a13 5.2 0 0 1 -26 0 Z"/>
+    <path d="M22.64 36.64 a9.36 8.05 0 0 1 18.72 0 l0 3.74 a9.36 3.74 0 0 1 -18.72 0 Z" opacity=".9"/>
+    <path d="M26.02 29.62 a5.98 5.14 0 0 1 11.96 0 l0 2.39 a5.98 2.39 0 0 1 -11.96 0 Z" opacity=".8"/>
+    <path d="M28.1 27.6 Q32 20.2 35.9 27.6 Z" opacity=".72"/>
+  </symbol>
+</svg>
+
+<p id="aviso-pendiente" class="solo-lectores">Enlace pendiente: el negocio todavía no ha configurado este dato.</p>
+<header class="cabecera" data-cabecera>
+  <div class="contenedor cabecera-fila">
+    <a class="logo" href="index.html" aria-label="Sunday Funday, inicio">
+      <svg class="logo-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="16" fill="#E14361"></rect>
+        <g fill="#FFF7EE"><use href="#forma-remolino"></use></g>
+      </svg>
+      <span class="logo-texto">Sunday Funday<small>Heladería &amp; café</small></span>
+    </a>
+
+    <nav class="nav-principal" aria-label="Principal">
+      <ul class="nav-lista">
+        <li><a class="nav-enlace" href="helados.html">Helados</a></li>
+        <li><a class="nav-enlace" href="cafes.html" aria-current="page">Cafés</a></li>
+        <li><a class="nav-enlace" href="otros-productos.html">Demás productos</a></li>
+        <li><a class="nav-enlace" href="index.html#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+
+    <div class="cabecera-acciones">
+      <a class="boton boton--principal boton--pequeno" href="index.html#ubicacion"
+         data-enlace="maps-direcciones" aria-describedby="aviso-pendiente">Cómo llegar</a>
+      <button class="boton-menu" type="button" data-boton-menu
+              aria-expanded="false" aria-controls="panel-menu" aria-label="Abrir el menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="panel-menu" id="panel-menu" data-panel-menu>
+  <nav aria-label="Navegación móvil">
+    <ul>
+      <li><a class="panel-enlace" href="index.html">Inicio</a></li>
+      <li><a class="panel-enlace" href="helados.html">Helados</a></li>
+      <li><a class="panel-enlace" href="cafes.html">Cafés</a></li>
+      <li><a class="panel-enlace" href="otros-productos.html">Demás productos</a></li>
+      <li><a class="panel-enlace" href="index.html#nosotros">Nosotros</a></li>
+      <li><a class="panel-enlace" href="index.html#ubicacion">Ubicación</a></li>
+    </ul>
+  </nav>
+  <div class="panel-pie">
+    <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones"
+       aria-describedby="aviso-pendiente">Cómo llegar</a>
+    <a class="boton boton--linea" href="index.html#contacto" data-enlace="whatsapp"
+       aria-describedby="aviso-pendiente">Escribir por WhatsApp</a>
+  </div>
+</div>
+
+<main id="contenido">
+
+<section class="carta-hero">
+  <div class="contenedor carta-hero-rejilla">
+    <div class="carta-hero-texto">
+      <p class="antetitulo">Sunday Funday · Nariño Sur, Bogotá</p>
+      <h1 class="titulo-1">Nuestros <em class="cursiva">cafés</em></h1>
+      <p class="entrada">Para la tarde bogotana, que casi siempre pide algo caliente. También hay té, aromática y café frío para los días en que sale el sol.</p>
+    </div>
+    <div class="carta-hero-visual">
+      <figure class="figura figura--domo">
+        <img src="assets/img/cafe.svg" width="900" height="1200" fetchpriority="high" loading="eager" decoding="async" alt="Espacio reservado para la fotografía del café de Sunday Funday.">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<nav class="carta-nav" aria-label="Secciones del menú">
+  <div class="contenedor">
+    <ul>
+      <li><a href="helados.html">Helados</a></li>
+      <li><a href="cafes.html" aria-current="page">Cafés</a></li>
+      <li><a href="otros-productos.html">Demás productos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="contenedor">
+
+  <section class="carta-bloque" id="cafe" aria-labelledby="t-cafe">
+    <div class="menu-grupo">
+      <h2 class="menu-grupo-titulo" id="t-cafe">Café</h2>
+      <ul class="menu-lista">
+          <li class="menu-item">
+            <span class="menu-item-nombre">Cappuccino</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Espresso y leche cremada.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Mocaccino</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Espresso, chocolate y leche.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Americano</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Espresso largo, sin apuros.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Café Bombón</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Espresso sobre leche condensada. Dulce y corto.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Café Vienés</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Espresso coronado con crema.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Cappuccino con Baileys <span class="etiqueta etiqueta--linea">+18</span></span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Nuestro cappuccino con un toque de Baileys.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Frappé de café</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Café frío, licuado y cremoso. Para cuando sale el sol.</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <figure class="carta-foto" data-reveal>
+    <div class="figura figura--suave">
+      <img src="assets/img/affogato.svg" width="800" height="1000" loading="lazy" decoding="async"
+           alt="Espacio reservado para la fotografía del affogato: helado suave con espresso por encima.">
+    </div>
+  </figure>
+
+  <section class="carta-bloque" id="te" aria-labelledby="t-te">
+    <div class="menu-grupo">
+      <h2 class="menu-grupo-titulo" id="t-te">Té e infusiones</h2>
+      <ul class="menu-lista">
+          <li class="menu-item">
+            <span class="menu-item-nombre">Té</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Infusión caliente. Pregunte por los sabores del día.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Té chai</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Especias y leche, para la tarde fría.</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item-nombre">Aromática de frutas</span>
+            <span class="menu-precio" data-pendiente>[PRECIO]</span>
+            <span class="menu-item-texto">Frutas en infusión. La de siempre en Bogotá.</span>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="carta-destacado carta-destacado--cacao" data-reveal>
+    <p class="antetitulo">Se piden juntos</p>
+    <h2 class="titulo-2">El café sabe mejor <em class="cursiva">con algo al lado</em></h2>
+    <p class="entrada">Un brownie, una torta de almojábana o unas fresas con chocolate. Casi nadie se toma el café solo, y con razón.</p>
+    <div class="grupo-botones">
+      <a class="boton boton--principal" href="otros-productos.html">Ver los postres</a>
+      <a class="boton boton--linea" href="helados.html">Ver los helados</a>
+    </div>
+  </div>
+
+  <section class="carta-bloque" aria-labelledby="t-visita">
+    <div class="cabecera-seccion" data-reveal>
+      <p class="antetitulo">Ya escogió</p>
+      <h2 class="titulo-2" id="t-visita">Ahora falta <em class="cursiva">venir</em></h2>
+      <p class="entrada">Nos encuentra en Google Maps como <strong>Sunday Funday Cra. 7 Nariño Sur</strong>.</p>
+      <div class="grupo-botones">
+        <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones"
+           aria-describedby="aviso-pendiente"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg> Cómo llegar</a>
+        <a class="boton boton--linea" href="index.html">Volver al inicio</a>
+      </div>
+      <p class="nota-foto">Las imágenes son marcadores: se reemplazan por fotografía real.</p>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+
+      <div>
+        <span class="logo">
+          <svg class="logo-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <rect width="64" height="64" rx="16" fill="#E14361"></rect>
+            <g fill="#FFF7EE"><use href="#forma-remolino"></use></g>
+          </svg>
+          <span class="logo-texto">Sunday Funday<small>Heladería &amp; café</small></span>
+        </span>
+        <p class="pie-lema">Helado suave, café y fruta fresca en Nariño Sur, Bogotá. Un negocio de familia desde 2021.</p>
+      </div>
+
+      <nav class="pie-columna" aria-label="Pie de página">
+        <h2>Menú</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="helados.html">Helados</a></li>
+          <li><a href="cafes.html">Cafés</a></li>
+          <li><a href="otros-productos.html">Demás productos</a></li>
+          <li><a href="index.html#ubicacion">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <div class="pie-columna">
+        <h2>Dónde y cómo</h2>
+        <ul>
+          <li><a href="index.html#ubicacion" data-enlace="maps" aria-describedby="aviso-pendiente">Sunday Funday Cra. 7 Nariño Sur</a></li>
+          <li><p data-dato="direccion" data-pendiente>[DIRECCIÓN COMPLETA]</p></li>
+          <li><p data-dato="horario" data-pendiente>[HORARIO]</p></li>
+          <li><a href="index.html#contacto" data-enlace="whatsapp" aria-describedby="aviso-pendiente">WhatsApp</a></li>
+          <li><a href="index.html#contacto" data-enlace="instagram" aria-describedby="aviso-pendiente">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pie-legal">
+      <p>© <span data-anio>2026</span> Sunday Funday. Bogotá, Colombia.</p>
+      <p>Precios pendientes de confirmar.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="barra-movil" data-barra-movil>
+  <a class="boton boton--principal" href="index.html#ubicacion" data-enlace="maps-direcciones" aria-describedby="aviso-pendiente">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    Cómo llegar
+  </a>
+  <a class="boton boton--crema boton--icono" href="index.html#contacto" data-enlace="whatsapp" aria-label="Escribir por WhatsApp" aria-describedby="aviso-pendiente">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5Z"></path></svg>
+  </a>
+</div>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260914b"></script>
+</body>
+</html>
